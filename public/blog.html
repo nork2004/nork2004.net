@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://nork2004.neocities.org/styling/scrollbar.css">
+    <title>blog</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/x-icon" href="https://wilardo.crd.co/assets/images/gallery04/95718630_original.gif?v=bca827db"> 
+    
+    <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Genos&display=swap');
+        
+ body {
+    display:block;
+    width:1130px;
+    margin-left: auto;
+    margin-right: auto;
+    background: black;
+    overflow:auto;
+}
+
+#structure {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 674px;
+    font-family: ms ui gothic;
+    margin-top: 60px;
+}
+
+#contain {
+    display: flex;
+    border: 2px solid black;
+    padding: 5px;
+    width: 660px;
+    border-radius: 0 0 20px 20px;
+    background: linear-gradient(darkgreen, greenyellow);
+    box-shadow: inset 0px 0px 0px 1px white, 0 0 4px #ffffff;
+}
+
+/* HEADERS SECTION */
+
+.header {
+    border: 2px solid black;
+    height: 180px;
+    border-radius: 50px 150px 0 0;
+    padding: 3px;
+    font-family: 'Genos', sans-serif;
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+    font-size: 3.2em;
+    webkit-background-clip: text;
+    box-shadow: inset 0px 0px 0px 1px white, 0 0 4px #ffffff;
+    background: url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/ngmmhfkl.png);
+    background-size: cover;
+    margin-bottom: 5px;
+}
+
+.header h1 {
+    transition: all 0.5s;
+}
+
+.header h1:hover {
+    webkit-filter: blur(0.5px);
+filter: blur(2px);
+}
+
+.sub-head {
+    border: 2px solid black;
+    height: 50px;
+    margin-bottom: 3px;
+    background: linear-gradient(darkgreen, greenyellow);
+    padding: 5px;
+    text-align: center;
+    box-shadow: inset 0px 0px 0px 1px white, 0 0 4px #ffffff;
+}
+
+.sub-head p {
+    background: linear-gradient(ghostwhite, gainsboro, gainsboro, gainsboro);
+    color: black;
+    height: 42px;
+    margin: 0;
+    border: double black;
+    box-shadow: inset 0px 0px 0px 1px white;
+}
+
+.sub-head b {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+}
+
+/* FLEX BOXES */
+
+.left {
+    
+}
+
+.right {
+    
+}
+
+/* SPIRAL PNG */
+
+.spiral {
+    filter: drop-shadow(0px 0px 1px #000000) drop-shadow(0px 0px 1px #000000) drop-shadow(0px 0px 1px #000000);
+    pointer-events: none;
+    image-rendering: pixelated;
+    position: absolute;
+    transform: translate(189px, 0px);
+    z-index: 5;
+}
+
+/* BOXES SECTIONS */
+
+.box1 {
+    width: 200px;
+    border: 2px solid black;
+    height: 460px;
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+    background:white;
+    overflow:auto;
+}
+
+.box2 {
+    width: 422px;
+    border: 2px solid black;
+    height: 460px;
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+    background: white;
+    margin-left: 10px;
+}
+
+/* PAPER SCROLLBOX */
+
+.paperscroll {
+    width: 180px;
+    border: 1px dashed black;
+    height: 200px;
+    padding: 5px;
+    position: absolute;
+    z-index: 6;
+    transform: translate(40px, 640px) rotate(347deg);
+    overflow: auto;
+    font-family: ms ui gothic;
+    font-size: 1em;
+    text-align: center;
+}
+
+.paperscroll h2 {
+    margin:0;
+    font-family: 'Genos', sans-serif;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+    color: white;
+}
+
+/* LACED IMAGE */
+
+.lace {
+    border-width: 8px;
+    border-style: solid;
+    border-image: url(https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/plainlace.png) 8 fill round;
+    width: 180px;
+    height: 162px;
+
+}
+
+/* INDEX SECTION */
+
+.nav {
+    border: double black;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    background: white;
+    height: 85px;
+    overflow-y: scroll;
+}
+
+.navhead {
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(to top, gainsboro, white);
+    border: 1px solid black;
+    border-radius: 5px 5px 0 0;
+    font-size: 1.3em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+     margin-bottom: 5px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: yellowgreen 1px 1px;
+    color: black;
+}
+
+.nav a:hover {
+    font-style:italic;
+}
+
+/* CATEGORIES SECTION */
+
+.notehead {
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(to top, gainsboro, white);
+    border: 1px solid black;
+    border-radius: 5px 5px 0 0;
+    font-size: 1.3em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+}
+
+.note {
+    border: double black;
+    margin-top: 5px;
+    height: auto;
+    border-radius: 5px;
+    background: white;
+    padding: 5px;
+    overflow-y: scroll;
+}
+
+.note ul {
+    list-style-type: none;
+    padding:0;
+}
+
+.note li {
+    margin-bottom:5px;
+}
+
+/* PAPER BACKGROUND */
+
+.notepaper {
+    width: 420px;
+    height: 460px;
+    image-rendering: pixelated;
+    filter: drop-shadow(0px 0px 2px #000000);
+    position:absolute;
+    z-index:1;
+    opacity: 50%;
+}
+
+/* ENTRY SECTION */
+
+.entriesholder {
+    overflow-y: scroll;
+    height: 450px;
+    z-index: 5;
+    position: relative;
+    padding: 5px;
+    padding-left: 60px;
+}
+
+.entry {
+}
+
+.entry ul {
+    padding-left:17px;
+}
+
+.divide {
+    height: 10px;
+    background: linear-gradient(to right, yellowgreen, transparent);
+    margin-bottom:10px;
+}
+
+.title {
+}
+
+.entryhead {
+  font-size: 2em;
+    margin: 0px;
+    padding: 5px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background: linear-gradient(45deg, yellowgreen, #ffffff00);
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+    border: 1px solid black;
+    box-shadow: inset 0px 0px 0px 1px white, 1px 1px 3px 0px #00000096;
+    font-family: 'Genos', sans-serif;
+}
+
+.date {
+    border: solid 1px black;
+    display: inline-block;
+    margin-left: 50px;
+    border-top: none;
+    padding: 5px;
+    border-radius: 0 0 5px 5px;
+    text-shadow: 1px 1px black;
+    color: white;
+    font-weight: bold;
+    background: yellowgreen;
+    box-shadow: inset 0px 0px 0px 1px white, 1px 1px 3px 0px #00000096;
+}
+
+.entry p:hover {
+    color:blue;
+    border: 1px solid black;
+    background: #e4ff92;
+    padding:2px;
+}
+
+.current {
+    float: right;
+    border: black 1px solid;
+    width: 140px;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+    background: white;
+    border-radius: 5px;
+}
+
+a {
+    color: blue;
+    text-decoration:none;
+}
+
+a:hover {
+    font-style:italic;
+}
+
+/* SONG MARQUEE */
+
+.nowplaying {
+    position: fixed;
+    color: white;
+    bottom: 4px;
+    left: 5px;
+    font-size: 16px;
+        font-weight: bold;
+    font-family: ms gothic;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    z-index:10;
+}
+
+    </style>
+    
+    <style>
+.lines {
+position: fixed;
+left: 0;
+top: 0;
+width: 100vw;
+height: 100vh;
+pointer-events: none;
+z-index: 300;
+opacity: 0.05;
+}
+ 
+.lines:before {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+pointer-events: none;
+background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+background-size: 100% 4px;
+will-change: background, background-size; animation: scanlines 0.2s linear infinite;
+}
+ 
+@keyframes scanlines {
+from {
+background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .5) 51%); background-size: 100% 4px; }
+to {
+background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
+background-size: 100% 4px;
+}
+}
+@media only screen and (max-width: 600px);
+{
+</style>
+
+<!--TOOLTIP-->
+
+<style>
+#s-m-t-tooltip{
+	/* basic */
+	max-width: 300px;
+	z-index: 10;
+	margin: 24px 14px 7px 12px;
+	/* style and design */
+	padding:8px;
+	border-radius:3px;
+    background: black;
+border: 1px solid blue;
+	color: white;
+font-family: ms ui gothic;
+font-size:13px;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+<script>
+							(function($){
+							$(document).ready(function(){
+							$("[title]").style_my_tooltips({
+							tip_follows_cursor: true,
+							tip_delay_time:100,
+							tip_fade_speed:300,
+							attribute:"title"
+							});
+							});
+							})(jQuery);
+</script>
+
+  </head>
+  <body>
+      
+      <div class="lines"></div>
+      
+       <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/paper2.png" style="position: absolute;z-index: 5;width: 270px;transform: translate(0px, 570px) rotate(347deg);filter: drop-shadow(0px 0px 6px #000000);pointer-events: none;">
+      
+<img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/109a92ed_original.png" style="position: absolute;z-index: 7;width: 100px;transform: translate(40px, 840px);filter: drop-shadow(0px 0px 6px #000000);pointer-events: none;">
+      
+<img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/e5b2ab64.png" style="position: absolute;transform: translate(0px, 570px);pointer-events: none;filter: drop-shadow(0px 0px 2px white);z-index: -1;">
+      
+      <div class="paperscroll">
+          <h2>disclaimer</h2>
+          
+          i am going to discuss some of my interests which may have horror themes or heavy topics such as violence, death, etc. i will also have some thoughts and feelings ill dump here which will probably go into personal issues.
+          
+          <p>other wise, entries will have a warning & category on them :-).</p>
+      </div>
+      
+<div id="structure">
+    <div class="header">
+         <h1>blog</h1>
+    </div>
+    
+    <div class="sub-head">
+ <p><b>welcome to my blog page</b>. i always thought that having a digital diary/journal would be more easier and organized, so i have it all right here to dump my thoughts and feelings.</p>
+    </div>
+    
+    <div id="contain">
+        
+        <aside class="left">
+            <div class="box1">
+                <center>
+              <div class="lace">
+              <img src="https://i.pinimg.com/originals/04/3a/75/043a75d74a19dce36d850999f5f9bd2b.gif" style="width: 178px;height: 159px;border-radius:5px;border:1px solid black;transform: translate(-1px, 0px);">
+              </div>
+          </center>
+          
+          <div class="nav">
+              <h2 class="navhead">index</h2>
+              
+              <img src="https://www.fancyparts.com/fancyparts/cg/icon/ball01/ball_s_04.gif"> <a href="#2">12/27/23</a> roblox zombie games [G]
+              <br>
+             <img src="https://www.fancyparts.com/fancyparts/cg/icon/ball01/ball_s_04.gif"> <a href="#1">11/16/23</a> first entry [P]
+             
+              
+          </div>
+          
+          <div class="note">
+             <h2 class="notehead">categories</h2>
+             <ul>
+                 <li><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/swirly.gif"> <b>G</b>: video games</li>
+                 <li><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/swirly.gif"> <b>F</b>: film/series</li>
+                 <li><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/swirly.gif"> <b>M</b>: music</li>
+                 <li><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/swirly.gif"> <b>D</b>: discussion</li>
+                 <li><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/swirly.gif"> <b>P</b>: personal</li>
+             </ul>
+         </div>
+                
+            </div>
+        </aside>
+        
+        <img class="spiral" src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/notebookspi.png">
+        
+        <aside class="right">
+            <div class="box2">
+                <img class="notepaper" src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/paperpiece.png">
+                
+               <!--ENTRIES-->
+                
+                <div class="entriesholder">
+                    
+
+<!-- START ENTRY 12/27/2023 (GAMES)-->
+                    
+               <div class="entry">
+                   <div class="title">
+                  <h2 class="entryhead">roblox zombie games [G]</h2>
+                  <span class="date" id="2">12/27/2023</span>
+                  </div>
+                  
+                  <div class="current">
+                      
+                      <p><b>listening</b>: <marquee>"Alarm Call" by Björk - on "Homogenic"</marquee></p>
+                      
+                      <p><b>watching</b>: <marquee><a href="https://youtu.be/Ndsv16Nq9Yg?si=uZZ42XwUYQGW_wq8">DEEP DISCOG DIVE: Björk</a></marquee></p>
+                      
+                      <p><b>eating</b>: spaghet</p>
+                      
+                      <p><b>feeling</b>: <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/cat203.gif"> </p>
+                  </div>
+                  
+                   <p> roblox has been one of the most rememberable platforms of all time through out my childhood of the early 2010s. even though i like it for what it is today with its smoother, modern, and LARGE playerbase. i often wish of going back to its more simplistic but janky way when i was in elementary on my grandmas windows vista.</p>
+                   <img src="https://i.pinimg.com/564x/f0/0a/ac/f00aace01928f2a9e3138a9ff97497ba.jpg" style="width:160px; float:left; margin-right:5px; border:double black;">
+                   
+                   <p>now when i think about its gaming (or called experiences -_-) page. i often think of the obbys, tycoons, simulators, roleplays. i was mostly a roleplay and obby kid at the time, since tycoons were too slow for me (but they were fun i guess), and i don't remember a single time where i touched a simulator. roleplays were fun because i was much of a fandom kid that like to make fanon lore, or just insert my gary sue/mary sue in canon games like mlp 3d roleplay and animatronic world. obbys are simple - they could be really random and fun like finding out who killed justin bieber, or just kinda gross with the whole being eaten and shitted out thing.</p>
+                   
+                   <p>but the most games i played were <b>zombie games</b>. </p>
+                   
+                   <p>zombie games were the main staple to me as a robloxian - to build to survive the zombies, to zombies are attacking mcdonalds (wtf lol). i was pretty much a frightened child, so any zombie game i played that involved surviving alone by yourself gave some challenge. and i think that award goes to apocalypse rising.</p>
+                   
+                   <img src="https://tr.rbxcdn.com/904e83fed9e432e84534fc9639dbffd7/500/280/Image/Jpeg" style="width:160px; float:right; margin-left:5px; border:double black;">
+                   
+                   <p>i still play roblox games to this day, and have been playing a lot of zombie games that are REALLY good in terms of challenge. ive noticed there are many call of duty zombies clones, and they get it down to an absolute TEA. so for this special occasion, i have compiled a list of roblox zombies games i heavily enjoyed. to when i was 8 years old towards today.</p>
+                   
+                   <ul>
+                       <li> <p><a href="https://www.roblox.com/games/6132051504/Build-to-Survive-the-Zombies">Build to Survive the Zombies</a> - my very first zombie game. a fun OG itself.</p></li>
+                       <li><p><a href="https://www.roblox.com/games/3075297/Zombies-are-Attacking-RoDonalds">Zombies are Attacking Mcdonalds</a> - nostalgic and fun. my most played as a kid.</p></li>
+                       <li><p><a href="https://www.roblox.com/games/1600503/Apocalypse-Rising">Apocalypse Rising</a> - nostalgic and challenging. private servers are free now too.</p></li>
+                       <li><p><a href="https://www.roblox.com/games/137885680/Zombie-Rush">Zombie Rush</a> - very fun and simple game with progressive upgrading. you can even play as a zombie!</p></li>
+                       <li><p><a href="https://www.roblox.com/games/4972091010/Zombie-Uprising">Zombie Uprising</a> - a good cod zombies clone with 3 difficulty modes.</p></li>
+                       <li><p><a href="https://www.roblox.com/games/443406476/Project-Lazarus-ZOMBIES"> Project Lazarus: ZOMBIES</a> - <b>VERY AWESOME</b> cod zombies clone. my most favorite.</p></li>
+                       <li><p><a href="https://www.roblox.com/games/8054462345/Michaels-Zombies">Michael's Zombies</a> - <b>VERY AWESOME</b> cod zombies clone. probably the best and most hardest in my opinion.</p></li>
+                       <li><p><a href="https://www.roblox.com/games/988099446/MMC-Zombies-Project">MMC Zombies Project</a> - a good cod zombies clone.</p></li>
+                       <li><p><a href="https://www.roblox.com/games/2984072291/Zombie-Stories">Zombie Stories</a> - <b>VERY AWESOME</b> game. it has story dialogue, training mode, etc. my most reccomended.</p></li>
+                       <li><p><a href="https://www.roblox.com/games/3759927663/Zombie-Strike-BETA">Zombie Strike</a> - a good and silly zombie game with customization and progessive upgrading.</p></li>
+                   </ul>
+               </div>
+               
+               <!--END ENTRY 12/26/2023 (GAMES)-->
+               
+               <div class="divide"></div>
+
+
+                   <!-- START ENTRY 11/16/2023 (PERSONAL)-->
+                    
+               <div class="entry">
+                   <div class="title">
+                  <h2 class="entryhead">first entry [P]</h2>
+                  <span class="date" id="1">11/16/2023</span>
+                  </div>
+                  
+                  <div class="current">
+                      
+                      <p><b>listening</b>: <marquee>"Stellar" by Incubus - on "Make Yourself"</marquee></p>
+                      
+                      <p><b>watching</b>: <marquee><a href="https://youtu.be/NXgEamFeeAE?si=A3jaeNhFRfkEQ_m9">origins of popular frutiger aero images</a></marquee></p>
+                      
+                      <p><b>eating</b>: papa johns</p>
+                      
+                      <p><b>feeling</b>: <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/cat47.gif"> </p>
+                  </div>
+                  
+                   <p>FIRST BLOG POST! today was pretty ordinary. i stayed in bed napping all day after i did an all-nighter with my messy sleep schedule as usual, then got up to watch more movies and videos i came across on my recommended.</p>
+                   
+                   <p>woke up to no one in the house except my sibling, my cat <b>ollie</b> bothering me about food in her plate (when she eats like every minute...), and the dogs napping. so this is pretty much just another plain day going by. kind of getting old.</p>
+                   
+                   
+                   <a href="https://file.garden/ZAkEYVkUN2HXHCu3/web/blogphotos/ollayyy.jpeg" title="my cat ollie i took with my phone (click for hd photo)" target="_blank"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/blogphotos/ollayyy.jpeg" style="width:120px; float:left; margin-right:5px; border:double black;"></a>
+                   
+                   <p>speaking of my cat, here's the little devil on the left side :-). and when i mean little devil, i mean <b>literally</b>. shes probably the most unfriendly cat i've ever seen or had, but only tolerates me and my sibling (when she wants to), but i love her evil ass bigger than my whole heart, ever since i got her back in 2016.</p>
+                   
+                   <p>getting back on topic, the day went by fast like always. it seems like when the winter season approaches, things tend to be more dull than ever (probably because i like autumn better). as december arrives, i hope next year will be something very different for me.</p>
+               </div>
+               
+               <!--END ENTRY 11/16/2023 (PERSONAL)-->
+                
+                <div class="divide"></div>
+                
+                
+                 </div>
+            </div>
+            
+        </aside>
+        
+    </div>
+    
+</div>
+
+<span class="nowplaying"> <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/196e7c93.gif"> lush - thoughtforms (2nd version) </span>
+
+<audio id="audio1" autoplay loop onloadeddata="setHalfVolume()"><source src="https://file.garden/ZAkEYVkUN2HXHCu3/mp3/Thoughtforms%20(2nd%20Version).mp3"></audio>
+
+<script>
+      function setHalfVolume() {
+        var myAudio = document.getElementById("audio1");  
+        myAudio.volume = 0.5; 
+      }
+    </script>
+
+  </body>
+</html>
