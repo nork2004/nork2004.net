@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webamp</title>
+    
+    <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
+    
+    <style>
+    
+    body {
+      overflow: hidden;
+    }
+    
+    </style>
+    
+  </head>
+  <body>
+    <div style="">
+	<div id="winamp-container"></div>
+    <script>
+const Winamp = window.Webamp;
+// All configuration options are optional.
+const webamp = new Webamp({
+    // Optional.
+    initialTracks: [
+        {
+          
+          metaData: {
+                artist: "Abandoned Pools",
+                title: "Sunny Day",
+            },
+            url: "https://file.garden/ZAkEYVkUN2HXHCu3/mp3/Abandoned%20Pools%20-%20Sunny%20Day.mp3",
+        }, {
+          
+            metaData: {
+                artist: "Incubus",
+                title: "Nice To Know You",
+            },
+            url: "https://file.garden/ZAkEYVkUN2HXHCu3/mp3/Incubus%20-%2001.%20Nice%20To%20Know%20You.mp3",
+        }, {
+            metaData: {
+                artist: "The Smashing Pumpkins",
+                title: "Today",
+            },
+            url: "https://file.garden/ZAkEYVkUN2HXHCu3/mp3/The%20Smashing%20Pumpkins%20-%20Today%20(HQ).mp3",
+        },
+        {
+          
+            metaData: {
+                artist: "Blur",
+                title: "Bang (Extended Version) (2012 Remaster)",
+            },
+            url: "https://file.garden/ZAkEYVkUN2HXHCu3/mp3/Bang%20(Extended%20Version)%20(2012%20Remaster).mp3",
+        },
+        {
+          
+           metaData: {
+                artist: "Lush",
+                title: "De-luxe",
+            },
+            url: "https://file.garden/ZAkEYVkUN2HXHCu3/mp3/DeLuxeLush.mp3",
+        },
+        {
+          
+            metaData: {
+                artist: "Radiohead",
+                title: "Subterranean Homesick Alien",
+            },
+            url: "https://file.garden/ZAkEYVkUN2HXHCu3/mp3/SubterraneanHomesickAlienRadiohead.mp3",
+        },
+        {
+          
+            metaData: {
+                artist: "The Smashing Pumpkins",
+                title: "Mayonaise (2011 Remaster)",
+            },
+            url: "https://file.garden/ZAkEYVkUN2HXHCu3/mp3/Mayonaise%20(2011%20Remaster).mp3",
+        },
+        {
+          
+            metaData: {
+                artist: "Abandoned Pools",
+                title: "Suburban Muse",
+            },
+            url: "https://file.garden/ZAkEYVkUN2HXHCu3/mp3/Abandoned%20Pools%20-%20Suburban%20Muse.mp3",
+        },
+        {
+          
+            metaData: {
+                artist: "Blur",
+                title: "Slow Down",
+            },
+            url: "https://file.garden/ZAkEYVkUN2HXHCu3/mp3/Blur%20-%20Slow%20Down.mp3",
+        },
+        {
+          
+            metaData: {
+                artist: "The Cranberries",
+                title: "Linger",
+            },
+            url: "https://file.garden/ZAkEYVkUN2HXHCu3/mp3/The%20Cranberries%20-%20Linger.mp3",
+        },
+      ],
+    initialSkin: {
+        url: "https://file.garden/ZAkEYVkUN2HXHCu3/webamp/Winamp5_Classified_v5.5.wsz"
+    },
+});
+webamp.renderWhenReady(document.getElementById('winamp-container'));
+</script>
+</div>
+  </body>
+</html>
+

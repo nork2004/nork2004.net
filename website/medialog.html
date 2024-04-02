@@ -1,0 +1,554 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://nork2004.neocities.org/styling/scrollbar.css">
+    <title>CONSUME</title>
+    
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/x-icon" href="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/uXwF7T5.gif">
+
+
+<style>
+    
+  @import url('https://fonts.googleapis.com/css2?family=Genos&display=swap');
+  
+body {
+    background:black;
+    display:block;
+    width:1100px;
+    height:740px;
+    margin-left:auto;
+    margin-right:auto;
+    font-family:simsun;
+}  
+
+#structure {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 5px;
+    border: 2px solid black;
+    width: 760px;
+    margin-right: auto;
+    margin-left: auto;
+    background: linear-gradient(to top, #252525, #7d7d7d);
+    box-shadow: inset 0px 0px 0px 1px white, 0 0 4px #ffffff;
+    border-radius: 20px;
+}
+
+#container {
+    display: flex;
+    width: 700px;
+}
+
+.left {
+    
+}
+
+.right {
+    
+}
+
+/* HEADER SECTION */
+
+.header {
+    width: 540px;
+    height: 140px;
+    border-radius: 10px;
+    border:2px solid black;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/gmdhfu.png);
+    background-size:cover;
+    box-shadow: inset 0px 0px 0px 1px white, 0 0 4px #ff3131, inset 0 5px 10px black, inset 0 5px 30px black;
+    font-family:'Genos', sans-serif;
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+    font-size: 3.2em;
+    webkit-background-clip: text;
+}
+
+.header h1 {
+    transition: all 0.5s;
+        margin-top:60px;
+}
+
+.header h1:hover {
+    webkit-filter: blur(0.5px);
+filter: blur(2px);
+}
+
+/* MAIN SECTION */
+
+.main {
+    width: 540px;
+    height: 420px;
+    border: 2px solid black;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    background: linear-gradient(180deg, rgb(187 115 115) 3%, rgba(28,4,4,1) 100%);
+    box-shadow: inset 1px 1px white, inset -1px -1px white, 0 0 4px #ff3131;
+}
+
+.maininner {
+    border: 1px solid black;
+    border-radius: 0 0 5px 5px;
+    background: url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/paper.jpg);
+    height: 376px;
+    padding: 5px;
+    box-shadow:inset 0px 0px 5px 0px #00000040;
+    font-size:15px;
+}
+
+.innerhead {
+    border: 1px solid black;
+    width: 250px;
+    padding: 5px;
+    border-radius: 10px;
+    background: white;
+}
+
+/* TABS */
+
+.tabcontent {
+    display:none;
+}
+
+.tab {
+    border: 2px solid black;
+    background-color: #f1f1f1;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 182px;
+    box-shadow: 0 0 4px #ff3131;
+}
+
+.tabinner {
+    border: 1px solid grey;
+    padding:5px;
+    background:white;
+}
+
+.tab button {
+    background: linear-gradient(180deg, rgba(124,124,124,1) 2%, rgba(93,92,92,1) 27%, rgba(57,57,57,1) 95%);
+    border: 1px solid grey;
+    width: 100%;
+    margin-top: 5px;
+    font-weight: bold;
+    font-family: simsun;
+    cursor: pointer;
+    font-size: 15px;
+    height: 30px;
+    text-shadow: 1px 1px rgb(0 0 0 / 80%);
+    box-shadow: inset 1px 1px white, inset -1px -1px white;
+    transition: .1s;
+    filter: drop-shadow(2px 2px 3px #787878);
+    color: white;
+    border-radius:10px;
+}
+
+.tab button.active {
+    border: inset;
+    background: linear-gradient(0deg, rgba(124,124,124,1) 2%, rgba(93,92,92,1) 27%, rgba(57,57,57,1) 95%);
+    font-style: italic;
+}
+
+.tab button:hover {
+    box-shadow: inset 1px -7px 9px 1px white, inset -1px -1px white;
+    font-style: italic;
+}
+
+.tabhead {
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+    padding: 2px;
+    background: linear-gradient(180deg, rgb(203 102 83) 3%, rgb(49 5 5) 100%);
+    color: white;
+    text-shadow: 1px 1px rgb(0 0 0/30%);
+    box-shadow: inset 1px 1px 5px white, inset -1px -1px 1px white, inset -1px 1px 5px white, inset 0 -1px 0.5px white;
+}
+
+/* SECTIONS CONTENT */
+
+.content {
+    border: 1px solid grey;
+    padding: 5px;
+    background: linear-gradient(#cdcdcd 70%, #464849);
+    box-shadow: inset 1px 1px white, inset -1px -1px white;
+    text-shadow: 1px 1px rgb(255 255 255/70%);
+    border-radius: 10px;
+}
+
+details > summary {
+    list-style-image: url(https://gifcity.carrd.co/assets/images/gallery12/cf3ec78a.gif?v=d32b0bb8);
+}
+
+details p {
+    border: 1px solid black;
+    border-radius: 5px;
+    background: linear-gradient(to top, #cdcdcd, transparent);
+    box-shadow: inset 3px 0px 0px 0px red, inset 0px 0px 4px 4px white;
+    padding-left: 5px;
+}
+
+.lol {
+    background: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.bookmarks {
+    border: 1px solid black;
+    border-top: none;
+    background: white;
+    width: 280px;
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+}
+
+.contentinner {
+    border:1px solid grey;
+    padding:5px;
+    border-radius: 5px;
+    background:white;
+}
+
+.contentimg {
+    width:100px;
+    border:1px solid black;
+    float:left;
+    margin-right:5px;
+    position:relative;
+    transition: all 0.5s;
+}
+
+.contentimg:hover {
+    transform: rotate(9deg);
+}
+
+.contenthead {
+    margin:0px;
+    border:1px solid black;
+    padding:2px;
+    width:300px;
+    border-radius:5px;
+    margin-top:5px;
+    background:linear-gradient(180deg, #8d1414 6%, #f93535 20%, #8d1414 75%, #e72b2b 96%);
+    text-shadow:-1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+    color:white;
+}
+
+/* PSVITA SECTION */
+
+.floater {
+    position: absolute;
+    width: 360px;
+    transform: translate(100px, 555px);
+    z-index: 5;
+    filter: drop-shadow(0px 0px 2px black) drop-shadow(0px 0px 2px red);
+    pointer-events: none;
+}
+
+.vita:before {
+    background:url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/computerscreen.png);
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 230px;
+    height: 400px;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-repeat: repeat;
+    z-index: 7;
+    pointer-events: none;
+    opacity:70%;
+}
+
+.vita {
+    border: 2px solid black;
+    background: white;
+    padding: 5px;
+    position: absolute;
+    width: 200px;
+    height: 110px;
+    z-index: 6;
+    transform: translate(170px, 570px) skew(351deg, 3deg);
+    overflow-y: scroll;
+    text-align: center;
+    text-shadow: 0 0 3px black;
+    overflow-x: hidden;
+}
+
+.marq {
+    border: 2px solid black;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #f1f1f1;
+    padding: 2px;
+    box-shadow: 0 0 4px #ff3131;
+}
+
+/* WARNING SECTION */
+
+#warning a{
+    color:red;
+    text-decoration:none;
+}
+
+#warning a:hover {
+    font-style:italic;
+}
+
+/* SONG MARQUEE */
+
+.nowplaying {
+    position: fixed;
+    color: white;
+    bottom: 4px;
+    left: 5px;
+    font-size: 16px;
+        font-weight: bold;
+    font-family: ms gothic;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    z-index:10;
+}
+
+    
+</style>
+
+
+
+<style>
+
+.lines {
+position: fixed;
+left: 0;
+top: 0;
+width: 100vw;
+height: 100vh;
+pointer-events: none;
+z-index: 300;
+opacity: 0.05;
+}
+ 
+.lines:before {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+pointer-events: none;
+background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+background-size: 100% 4px;
+will-change: background, background-size; animation: scanlines 0.2s linear infinite;
+}
+ 
+@keyframes scanlines {
+from {
+background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .5) 51%); background-size: 100% 4px; }
+to {
+background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
+background-size: 100% 4px;
+}
+}
+@media only screen and (max-width: 600px);
+{
+</style>
+
+  </head>
+  <body>
+      
+      <div class="lines"></div>
+      
+      <div class="vita">
+          <h3>welcome to my medialog.</h3>
+          <p>this is a collection of games, movies, series, books - anything that is considered media that i enjoyed. i really enjoy horror media, so you'll probably see a vast majority of it and related types in this page lol.</p>
+          
+          <p>i hope you enjoy snooping around in each tab to see my messy taste.</p>
+      </div>
+      <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/psvita.png" class="floater">
+      
+<div id="structure">
+    
+    
+    <div id="container">
+        
+<!--LEFT START-->
+    
+      <aside class="left">
+          <div class="tab">
+              <div class="tabinner">
+  <button class="tablinks" onclick="openCity(event, 'games')" style="margin-top: 0px;">games</button>
+    <button class="tablinks" onclick="openCity(event, 'movies')">movies</button>
+  <button class="tablinks" onclick="openCity(event, 'series')">series</button>
+  <button class="tablinks" onclick="openCity(event, 'books')">books</button>
+  </div>
+  <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/images/download%20(17).jpg" style="width:180px; height:200px; border:1px solid grey; margin-top:5px">
+</div>
+
+<div id="warning" class="tab" style="margin-top:10px; text-align:center;">
+    <b>warning</b>: there will probably be talks of gore, violence, and other triggering topics. so please proceed with caution.
+    <br>
+    <br>
+    <a href="https://letterboxd.com/nork2004/"><img src="https://gifcity.carrd.co/assets/images/gallery12/cf3ec78a.gif?v=d32b0bb8"> my letterboxd</a>
+    
+</div>
+
+      </aside>
+      
+<!--LEFT END-->
+
+
+<!--RIGHT START-->
+      
+      <aside class="right">
+              <div class="header">
+                <h1>medialog</h1>
+            </div>
+          
+        <div class="main">
+                        <!--TABS START-->
+            <div id="games" class="tabcontent" style="display:block;">
+              <h2 class="tabhead">gaming box</h2>
+            
+<div class="maininner">
+  <center><h3 class="innerhead">this page is a work in prog lol</h3></center>
+  
+  <!--GAME START-->
+  <div class="content">
+      <div class="contentinner">
+          <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/images/Shadow%20of%20the%20Colossus.jpg" class="contentimg">
+          <h3 class="contenthead">shdowo of colsosos</h3>
+          <p>wip</p>
+           <details>
+               <summary>CLICK FOR REVIEW</summary>
+              <p> wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip</p>
+           </details>
+      </div>
+  </div>
+  <!--GAME END-->
+  
+  </div>
+</div>
+
+<!--NEXT SECTION-->
+
+<div id="movies" class="tabcontent" style="display:none;">
+               <h2 class="tabhead">DVD cases</h2>
+             <div class="maininner">
+                 
+                 <center><details>
+                     <summary class="lol">bookmarks</summary>
+                     <div class="bookmarks"><button>2024</button></div>
+                 </details></center>
+                 
+   <center><h3 class="innerhead">ALL TIME FAVORITES</h3></center>
+                 
+  <!--MOVIE START-->
+  <div class="content">
+      <div class="contentinner">
+          <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/images/dndnd.jpg" class="contentimg">
+          <h3 class="contenthead">Donnie Darko</h3>
+          <p>wip</p>
+           <details>
+               <summary>CLICK FOR REVIEW</summary>
+              <p> wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip wip</p>
+           </details>
+      </div>
+  </div>
+  <!--MOVIE END-->
+  
+  </div>
+</div>
+
+<!--NEXT SECTION-->
+
+         <div id="series" class="tabcontent" style="display:none;">
+               <h2 class="tabhead">series library</h2>
+             <div class="maininner">
+  <h3>wip</h3>
+  </div>
+</div>
+
+<!--NEXT SECTION-->
+
+         <div id="books" class="tabcontent" style="display:none;">
+               <h2 class="tabhead">book shelf</h2>
+             <div class="maininner">
+  <h3>wip</h3>
+  </div>
+</div>
+<!--TABS END-->
+        </div>
+      </aside>
+      
+<!--RIGHT END-->
+
+
+  </div>
+  
+  <marquee class="marq">
+            <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/3TQ87N7.png">
+            <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/d1pcd89-903d2bc3-1a95-44c4-9384-d9866253a5aa.gif">
+      <img src="https://i.imgur.com/8D809rV.png">
+      <img src="https://wilardo.crd.co/assets/images/gallery16/b6779887.gif?v=47044b3a">
+            <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/sawsweries.png">
+            <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/dc9xjau-98120f63-3797-4397-97e5-19fe8408191b.gif">
+      <img src="https://wilardo.crd.co/assets/images/gallery16/30cbaa81.png?v=47044b3a">
+      <img src="https://wilardo.crd.co/assets/images/gallery16/8fe62882.png?v=07a8a49e">
+      <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/d2b7dhk-20717355-c075-4a6e-8dbd-a3661219b64f.png">
+      <img src="https://64.media.tumblr.com/4d27f21fd40638fedcd1a821d18747c3/ac8e2893d5ddfc0f-30/s100x200/68d8e6796d1b2d330bfef7c62e5e860aa183c5af.png">
+      <img src="https://wilardo.crd.co/assets/images/gallery13/0e763101.gif?v=47044b3a">
+      <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/d5myhff-8e87df76-e0e6-413e-948b-46aaaa133644.gif">
+
+  </marquee>
+</div>
+
+
+<span class="nowplaying"> <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/196e7c93.gif"> gorillaz - november has come </span>
+
+<audio id="audio1" autoplay loop onloadeddata="setHalfVolume()"><source src="https://file.garden/ZAkEYVkUN2HXHCu3/mp3/Gorillaz%20-%20November%20Has%20Come%20-%20Demon%20Days.mp3"></audio>
+
+<script>
+      function setHalfVolume() {
+        var myAudio = document.getElementById("audio1");  
+        myAudio.volume = 0.5; 
+      }
+    </script>
+    
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+  </body>
+</html>
+

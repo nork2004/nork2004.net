@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://nork2004.neocities.org/styling/scrollbar.css">
+    <title>Hello, World!</title>
+    
+     <!-- IMPORTANT!
+    
+    hello! i see you :-)
+    
+    sorry that my code is a little messy, i couldnt get the external css to work D:
+    so i have it all in here instead.
+    
+    please don't steal my whole layout... but if you came for inspiration or to see
+    how i did things, knock yourself out!
+    
+    
+    -->
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="https://caterpie.crd.co/assets/images/gallery38/a2df313f.gif?v=ce36ac9f"> 
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Genos&display=swap');
+    
+body {
+    background: linear-gradient(to top, black, transparent), url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/98uuhjtg.png);
+    background-attachment:fixed;
+    font-family: ms ui gothic;
+} 
+
+#main {
+    width:800px;
+    height:540px;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    margin-top:100px;
+}
+
+.right {
+    
+}
+
+.left {
+    margin-right:10px;
+}
+
+.box1 {
+    width: 430px;
+    height: 470px;
+    border: 2px black solid;
+    outline: 2px solid lightgrey;
+    background: white;
+    border-radius: 0 100px 0 0;
+    padding:5px;
+    background: lightgrey;
+    box-shadow: 0 0 7px #ffffff;
+}
+
+.inner1 {
+    background: white;
+    border: 2px black solid;
+    border-radius: 0 95px 0 0;
+    height: 465px;
+    overflow: auto;
+}
+
+.buttons {
+    padding:3px;
+}
+
+.head {
+    font-size:1.8em;
+    border: 2px solid black;
+    border-left:none;
+    margin-top:20px;
+    display:block;
+    width:300px;
+    border-radius:0 20px 20px 0;
+    background: linear-gradient(#a2c4e4, white);
+    text-shadow:-1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+    color: white;
+     font-family: 'Genos', sans-serif;
+     padding:3px;
+     padding-left:8px;
+     box-shadow: white 0px 0px 0px 1px inset;
+     font-weight:bold;
+}
+
+li:hover {
+    color:blue;
+}
+
+ul {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+/*LEFT */
+
+.box2 {
+    width: 330px;
+    height: 470px;
+    border: 2px black solid;
+    outline: 2px solid lightgrey;
+    padding: 5px;
+    background: lightgrey;
+    box-shadow: 0 0 7px #ffffff;
+    border-radius: 0 0 0 100px;
+}
+
+.inner2 {
+    background: white;
+    border: 2px black solid;
+    height: 465px;
+    overflow: auto;
+    border-radius: 0 0 0 95px;
+}
+
+.head2 {
+    font-size:1.8em;
+    border: 2px solid black;
+    margin-top:20px;
+    display:block;
+    width:200px;
+    border-radius:20px 20px 20px 20px;
+    background: linear-gradient(#a2c4e4, white);
+    text-shadow:-1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+    color: white;
+     font-family: 'Genos', sans-serif;
+     padding:3px;
+     padding-left:8px;
+     box-shadow: white 0px 0px 0px 1px inset;
+     font-weight:bold;
+}
+
+/* FOOTER */
+
+.enter {
+    display: block;
+    font-size: 19px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+   transition: all 0.5s;
+   width:100px;
+font-family: ms ui gothic;
+font-weight:bold;
+}
+
+.enter:hover {
+font-style:italic;
+}
+
+.enter a {
+    text-decoration:none;
+color: black;
+}
+
+/* XENICRING */
+
+#xenicRing #xenicFlag {
+	background: url('https://i.pinimg.com/564x/49/e3/39/49e339b7782abd8d48419564edc15ecf.jpg')!important;
+}
+
+#xenicRing #next-arrow {
+	background: url('https://file.garden/ZAkEYVkUN2HXHCu3/web/images/arrow2.png')!important;
+}
+
+#xenicRing #prev-arrow {
+	background: url('https://file.garden/ZAkEYVkUN2HXHCu3/web/images/arrow1.png')!important;
+}
+    
+</style>
+
+<style>
+.lines {
+position: fixed;
+left: 0;
+top: 0;
+width: 100vw;
+height: 100vh;
+pointer-events: none;
+z-index: 300;
+opacity: 0.05;
+}
+ 
+.lines:before {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+pointer-events: none;
+background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+background-size: 100% 4px;
+will-change: background, background-size; animation: scanlines 0.2s linear infinite;
+}
+ 
+@keyframes scanlines {
+from {
+background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .5) 51%); background-size: 100% 4px; }
+to {
+background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
+background-size: 100% 4px;
+}
+}
+@media only screen and (max-width: 600px);
+{
+</style>
+
+
+  </head>
+  
+    <body>
+  
+   <div class="lines"></div>
+      
+<div id="main">
+    
+<!--LEFT START-->
+    
+    <aside class="left">
+        
+<div class="box2">
+    <div class="inner2">
+    
+
+ 
+
+        
+        <center><span class="head2">webrings</span></center>
+        
+        <br>
+        <br>
+        
+        
+        <!--START OF NULL WEBRING-->
+        <center>
+        <script src="https://nuthead.neocities.org/ring/ring.js"></script>
+        </center>
+        <!--END OF NULL WEBRING-->
+        
+        <br>
+        <br>
+        
+          <!--START OF AUTIRING-->
+        <center>
+        <div id="autiring">
+<script type="text/javascript" src="https://macaque.moe/autiring/onionring-variables.js"></script>
+<script type="text/javascript" src="https://macaque.moe/autiring/onionring-widget.js"></script>
+</div>
+
+        </center>
+        <!--END OF AUTIRING-->
+        
+        <br>
+        <br>
+        
+        <!--START OF ALTERHUMAN RING-->
+        <center>
+
+<div id='ahsc' style="margin:0px; width: 260px;">
+<script type="text/javascript" src="https://feelingmachine.moe/alterring/onionring-variables.js"></script>
+<script type="text/javascript" src="https://feelingmachine.moe/alterring/onionring-widget.js"></script>
+<link rel="stylesheet" href="https://feelingmachine.moe/alterring/onionring.css">
+</div>
+
+
+        </center>
+        <!--END OF ALTERHUMAN RING-->
+        
+        <br>
+        <br>
+        
+        <!--START OF XENICRING-->
+        <center>
+        <div id='xenicRing'>
+	<script type="text/javascript" src="https://confettiguts.neocities.org/xenics/onionring-variables.js"></script>
+	<script type="text/javascript" src="https://confettiguts.neocities.org/xenics/onionring-widget.js"></script>
+	<link rel="stylesheet" href="https://confettiguts.neocities.org/xenics/onionring.css">
+</div>
+        </center>
+        <!--END OF XENICRING-->
+        
+        <br>
+        <br>
+        
+        <!--START OF SELF INSERT WEBRING-->
+        <center>
+        
+
+<div id="selfinsertwebring">
+				<script src="showWebring2.js"></script>
+			</div>
+       
+        </center>
+        <!--END OF SELF INSERT WEBRING-->
+        
+        <br>
+        <br>
+        
+        <!--START OF TOMODACHI LIFE RING-->
+        <center>
+        <a href="https://midifreak.online/tomodachi">
+<img src="https://midifreak.online/aptbutton.gif"></a>
+        </center>
+        <!--END OF TOMODACHI LIFE RING-->
+        
+        <br>
+        <br>
+        
+                <!--START OF TMASC RING-->
+        <center>
+        
+        <link rel="stylesheet" href="https://goooby.neocities.org/onionring.css">
+        <div id='transmasc_ring'>
+          <script type="text/javascript" src="https://goooby.neocities.org/onionring-variables.js"></script>
+          <script type="text/javascript" src="https://goooby.neocities.org/onionring-widget.js"></script>
+          </div>
+        
+        </center>
+        <!--END OF WEB TMASC RING-->
+        
+        <br>
+        <br>
+        
+              <!--START OF WEB GUARDIAN-->
+        <center>
+        <div class="results" style="width: 200px;background-color: #fff;color: #000;display: block;padding: 10px;border: 1px solid;margin: 0 auto;font-family: 'times';font-size: '15pt';">
+        <p style="margin: 0">This page is protected by a</p>
+        <h1 class="title" style="margin: 0">CAT</h1>
+        <img class="image" style="max-width: 160px;border: 1px solid" alt="CAT" src="https://i.ibb.co/Bc2KW7v/cat.jpg">
+        <p class="description">Cats are believed to be the only mammals who don't taste sweetness.</p>
+        <small>
+          <a href="https://hekate.neocities.org">Want your own? Visit hekate.neocities.org!</a>
+        </small>
+      </div>
+        </center>
+        <!--END OF WEB GUARDIAN-->
+        
+        <br>
+        <br>
+
+        
+        
+    </div>
+    
+</div>
+
+</aside>
+
+<!--LEFT END-->
+
+<aside class="right">
+    
+<div class="box1">
+    <div class="inner1">
+        <span class="head">welcome to my site</span>
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/chao.gif" style="float:left; width:100px">
+        
+         <p>thank you for finding <b>nork2004</b>, a clouded site filled with the work and passions of <b>nork</b>.</p>
+         <p><b>before you peek</b>, heres a few things:</p>
+         
+           <br>
+           <br>
+           <br>
+      <ul>
+          <li>this is best viewed on 1920x1080 desktop, chrome, and windows.</li>
+          
+          <li>music can autoplay on some pages except the main.</li>
+          
+          <li>there are many gifs, minimal animations, minimal javascripts, and  frequent iframes.</li>
+          
+          <li>there will be swearing, horror imagery, and slight blood or violence.</li>
+          
+          <li>this was not made for mobile users in mind.</li>
+      </ul>
+      <br>
+      <br>
+      
+      
+      <center>
+      <div class="buttons">
+          
+<a href="https://neocities.org/site/nork2004"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/neocities.gif"></a>
+
+      <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/bestvieweddesktop.gif">
+ <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/1bw28.gif">
+ <a href="https://ceasefiretoday.com/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/freepalestine.gif"></a>
+ <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/antinazi.gif">
+ <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/transrights.png">
+ <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/madewithcss.png">
+ <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/imademywebsite.gif">
+ </div>
+      </center>
+      
+    </div>
+    
+</div>
+    
+</aside>
+
+
+
+</div>
+
+<center><span class="enter"><a href="/main">enter</a></span></center>
+
+  </body>
+</html>

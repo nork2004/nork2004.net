@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nork2004.net</title>
+    
+    <!-- IMPORTANT!
+    
+    hello! i see you :-)
+    
+    sorry that my code is a little messy, i couldnt get the external css to work D:
+    so i have it all in here instead.
+    
+    please don't steal my whole layout... but if you came for inspiration or to see
+    how i did things, knock yourself out!
+    
+    
+    -->
+    
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/98.css"
+>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="https://caterpie.crd.co/assets/images/gallery38/a2df313f.gif?v=ce36ac9f"> 
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Genos&display=swap');
+
+body {
+    width: auto;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to bottom, black, transparent), url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/98uuhjtg.png);
+    background-attachment: fixed;
+    font-family: ms ui gothic;
+}
+
+.header {
+    width: 773px;
+    height: 180px;
+    border: 2px solid blue;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px 0 0 0;
+    outline: 1px solid white;
+    box-shadow: 0px 0px 8px 0px #ffffff66;
+    background:linear-gradient(to top, black, transparent), url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/jdfjkkfdm.png);
+    background-size:cover;
+    box-shadow: inset white 0px 0px 2px 1px, 0 0 7px #ffffff;
+}
+
+.header h1 {
+    font-size: 8.7em;
+    color: white;
+    font-family: 'Genos', sans-serif;
+    webkit-background-clip: text;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+    transition: all 0.5s;
+    transform: translate(0px, -10px);
+}
+
+.header h1:hover {
+    webkit-filter: blur(0.5px);
+filter: blur(2px);
+}
+
+#structure {
+    display:flex;
+    color:black;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+#contain {
+    width: 773px;
+    height: auto;
+    border: 2px solid blue;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 5px;
+    outline: 1px solid lightgrey;
+    background: white;
+    box-shadow: 0 0 7px #ffffff;
+}
+
+#contain2 {
+    width: 773px;
+    height: auto;
+    border: 2px solid blue;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 5px;
+    outline: 1px solid lightgrey;
+    background: white;
+    box-shadow: 0 0 7px #ffffff;
+}
+
+.right {
+}
+
+.left {
+}
+
+.footer {
+    border: 2px solid blue;
+    height: 100px;
+    width: auto;
+    color: white;
+    border-radius: 0 0 100px 100px;
+    margin-bottom: 20px;
+    outline: 1px solid lightgrey;
+    box-shadow: 0px 0px 8px 0px #ffffff66;
+    margin-top:5px;
+    background:linear-gradient(to bottom, black, transparent), url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/jdfjkkfdm.png);
+    background-size: cover;
+    box-shadow: inset white 0px 0px 2px 1px, 0 0 7px #ffffff;
+    font-family: 'Genos', sans-serif;
+}
+
+.footer h4 {
+    font-size: 2em;
+    margin-bottom:5px;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+     transition: all 0.5s;
+}
+
+.footer h4:hover {
+    webkit-filter: blur(0.5px);
+filter: blur(2px);
+}
+
+/* NAVIGATION SECTION */
+
+.navigation {
+    width: 220px;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+    text-align: right;
+    height: 602px;
+    background: linear-gradient(to top, #716f6f, transparent);
+    box-shadow: white 0px 0px 0px 1px inset, 0px 0px 3px black;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 5px;
+    line-height: 25px;
+    border: solid black 2px;
+    margin: 0;
+    background: lightgrey;
+    box-shadow: white 0px 0px 0px 1px inset;
+    border-radius: 0 0 10px 10px;
+    height: 566px;
+    overflow:auto;
+}
+
+.navigation li {
+    margin-bottom:5px;
+}
+
+.navigation a {
+    font-weight: bold;
+    font-family: ms gothic;
+    font-size:16px;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background: linear-gradient(#a2c4e4, white);
+    border: 1px solid black;
+    border-radius: 5px;
+    display:inline-block;
+    width:120px;
+    box-shadow: 0 0 5px 2px #fff inset, 0 -8px 3px #fff inset
+
+}
+
+.navigation a:hover {
+    background: linear-gradient(white, #a2c4e4);
+    font-style: italic;
+    margin-right:8px;
+    border-color: blue;
+}
+
+.navhead {
+    background: linear-gradient(blue, lightblue);
+    text-align: center;
+    font-size: 2EM;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 0;
+    margin: 0px;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+    border: 2px solid black;
+    border-bottom: none;
+    box-shadow: inset white 0px 0px 2px 1px, 0px 0px 3px black;
+    font-family: 'Genos', sans-serif;
+}
+
+.lihead {
+    margin: 0px 0px 5px 0px;
+    letter-spacing: 3px;
+    font-size:2em;
+    font-family: 'Genos', sans-serif;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+    color: white;
+}
+
+/* MAIN */
+
+.main {
+    border: 2px solid black;
+    width: 520px;
+    height: 372px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    background: linear-gradient(to top, #716f6f, transparent);
+    box-shadow: white 0px 0px 0px 1px inset, 0px 0px 3px black;
+    border-radius: 10px;
+    font-size:16px;
+}
+
+.maininner {
+    border: 2px solid black;
+    padding: 4px;
+    margin-top: 3px;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(180deg, #ffffff, #cfcfcf);
+    overflow: auto;
+    height: 305px;
+}
+
+.mainhead {
+    font-size:2.5em;
+    margin:0;
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+    border:2px solid black;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(blue, lightblue);
+    padding-left:5px;
+    letter-spacing: 3px;
+    box-shadow: inset white 0px 0px 2px 1px;
+    font-family: 'Genos', sans-serif;
+}
+
+/* WEBMASTER */
+
+.webmaster {
+    width: 340px;
+    border: 2px solid black;
+    padding: 5px;
+    height: 239px;
+    border-radius: 10px;
+    margin-right: 5px;
+    background: url(https://i.pinimg.com/564x/90/0e/5d/900e5db1b0013f918692081e67fde371.jpg);
+    box-shadow: white 0px 0px 0px 1px inset, 0px 0px 3px black;
+}
+
+.webinner {
+    background: lightgrey;
+    border: 2px solid black;
+    padding: 5px;
+    border-top: 0px;
+    height: 194px;
+    border-radius: 0 0 10px 10px;
+}
+
+.webhead {
+    font-size: 2em;
+    margin: 0;
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+    border: 2px solid black;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(blue, lightblue);
+    letter-spacing: 3px;
+    box-shadow: inset white 0px 0px 2px 1px;
+    text-align: center;
+    font-family: 'Genos', sans-serif;
+}
+
+.details {
+    border: double black;
+    height: 88px;
+    float: left;
+    width: 207px;
+    padding: 4px;
+    background: linear-gradient(#a2c4e4, white);
+    box-shadow: 0 0 5px 2px #fff inset, 0 -8px 3px #fff inset;
+    overflow: auto;
+    font-size: 16px;
+}
+
+.details p {
+    margin-top:4px;
+    margin-bottom:4px;
+}
+
+.name {
+    color: blue;
+    font-size: 19px;
+    background: linear-gradient(#a2c4e4, white);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 3px;
+    box-shadow: 0 0 5px 2px #fff inset, 0 -8px 3px #fff inset;
+}
+
+/* LINK */
+
+.linkme {
+    border: 2px solid black;
+    width: 161px;
+    height: 239px;
+    border-radius: 10px;
+    background: url(https://i.pinimg.com/564x/c4/85/28/c485288e3d26a143e3aeb3e89bb7dd2f.jpg);
+    background-size: cover;
+    box-shadow: white 0px 0px 0px 1px inset, 0px 0px 3px black;
+    text-align: center;
+    padding: 5px;
+}
+
+.linkinner {
+    border: solid 1px black;
+    background: rgb(0 0 0 / 39%);
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    height: 237px;
+    overflow: auto;
+}
+
+.linktitle {
+    color: white;
+    font-size: 16px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: bold;
+    display: block;
+    padding-top: 5px;
+}
+
+/* FEATURE SECTION */
+
+.featurez {
+    width: 336px;
+    height: 346px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 5px;
+    background: linear-gradient(to top, #716f6f, transparent);
+    box-shadow:white 0px 0px 0px 1px inset, 0px 0px 3px black;
+}
+
+.featinner {
+    width: auto;
+    height: 168px;
+    border: 2px solid black;
+    padding: 5px;
+    border-top: 0px;
+    background: lightgrey;
+    margin-bottom: 5px;
+}
+
+.feathead {
+    font-size: 2em;
+    margin: 0;
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+    border: 2px solid black;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(blue, lightblue);
+    letter-spacing: 3px;
+    box-shadow: inset white 0px 0px 2px 1px;
+    text-align: center;
+    font-family: 'Genos', sans-serif;
+}
+
+.feattitle {
+    position: absolute;
+    margin-left: 2px;
+    border: 1px solid black;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: bold;
+    color: white;
+    padding: 2px;
+    border-radius: 0 0 5px 0;
+    font-size: 16px;
+    background: linear-gradient(#a2c4e4, white);
+    box-shadow: 0 0 5px 2px #fff inset, 0 -8px 3px #fff inset;
+    margin-top: 2px;
+}
+
+.featimg {
+    -webkit-transition: 0.25s ease;
+    transition: 0.25s ease;
+}
+
+.featimg:hover {
+     transform: scale(1.2,1.2);
+    -webkit-transition: 10s ease;
+    transition: 1.3s ease;
+}
+
+
+/*WEBAMP MUSIC PLAYER */
+
+.webampz {
+    padding: 3px;
+    height: 350px;
+    border: 2px solid black;
+    width: 275px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #716f6f, white, grey);
+    box-shadow:white 0px 0px 0px 1px inset, 0px 0px 3px black;
+}
+
+/* SITES I LIKE */
+
+.featsites {
+    width: 124px;
+    border: 2px solid black;
+    height: 257px;
+    border-radius: 10px;
+    background: url(https://i.pinimg.com/564x/46/0f/75/460f75b7b9fe2c0e1d6f4d0e458da7d8.jpg);
+    box-shadow:white 0px 0px 0px 1px inset, 0px 0px 3px black;
+}
+
+.marqueehead {
+    font-size: 2em;
+    margin: 0;
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+    border: 2px solid black;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(blue, lightblue);
+    letter-spacing: 3px;
+    box-shadow: inset white 0px 0px 2px 1px;
+    text-align: center;
+    font-family: 'Genos', sans-serif;
+}
+
+.sitemarq {
+    text-align: center;
+    height: 240px;
+    width: 110px;
+    border: solid 1px black;
+    background: rgb(0 0 0 / 39%);
+    margin-left: 6px;
+    border-top: none;
+}
+
+/* UPDATE SECTION */
+
+.updates {
+    border: solid 2px black;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    height: 93px;
+    width: 332px;
+}
+
+.updatehead {
+    font-size: 2em;
+    margin: 0;
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+    border: 2px solid black;
+    border-bottom:none;
+    background: linear-gradient(blue, lightblue);
+    letter-spacing: 3px;
+    box-shadow: inset white 0px 0px 2px 1px;
+    text-align: center;
+    font-family: 'Genos', sans-serif;
+}
+
+/* FLOATING TV GRAPHIC */
+
+.floater {
+    position: absolute;
+    width: 160px;
+    margin-top: 1180px;
+    margin-left: 733px;
+    pointer-events: none;
+    animation: float 6s ease-in-out infinite;
+    filter: sepia(100%) hue-rotate(190deg) saturate(5) drop-shadow(0px 0px 5px #000000);
+    image-rendering: pixelated;
+    z-index:5;
+}
+
+@keyframes float {
+    0% {
+    transform: translatey(0px);
+}
+50% {
+    transform: translatey(-10px);
+}
+100% {
+    transform: translatey(0px);
+}
+}
+
+.stamps {
+width: 773px;
+    border: 2px solid blue;
+    outline: 1px solid white;
+    margin-top: 5px;
+    padding: 5px;
+    background: linear-gradient(to top, grey, black);
+    height: 55px;
+    box-shadow: white 0px 0px 0px 1px inset, 0 0 7px #ffffff;
+}
+
+.stamps img {
+    filter: sepia(100%) hue-rotate(190deg) saturate(5);
+}
+
+</style>
+
+<!--STATUS CAFE-->
+
+<style>
+
+#statuscafe {
+    padding: 5px;
+    background: linear-gradient(#a2c4e4, white);
+    border: double black;
+    margin-top: 104px;
+    height: 73px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 1px 2px white;
+    font-size:16px;
+    overflow:auto;
+    box-shadow: white 0px 0px 0px 1px inset;
+}
+#statuscafe-username {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size:16px;
+}
+#statuscafe-content {
+    margin:3px;
+}
+
+#statuscafe a {
+  text-decoration: none;
+}
+
+</style>
+
+<!--TOOLTIP-->
+
+<style>
+#s-m-t-tooltip{
+	/* basic */
+	max-width: 300px;
+	z-index: 10;
+	margin: 24px 14px 7px 12px;
+	/* style and design */
+	padding:8px;
+	border-radius:3px;
+    background: black;
+border: 1px solid blue;
+	color: white;
+font-family: ms ui gothic;
+font-size:13px;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+<script>
+							(function($){
+							$(document).ready(function(){
+							$("[title]").style_my_tooltips({
+							tip_follows_cursor: true,
+							tip_delay_time:100,
+							tip_fade_speed:300,
+							attribute:"title"
+							});
+							});
+							})(jQuery);
+</script>
+
+<!--WINDOWS 98 SCROLLBOX-->
+
+<style>
+    
+  .title-bar-controls button {border:none;border-radius:0;box-sizing:border-box;color:transparent;min-height:23px;min-width:75px;padding:0 12px;text-shadow:0 0 #222}
+ 
+.title-bar-controls button {background:silver;box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf}
+ 
+.title-bar-controls button:not(:disabled):active {box-shadow:inset -1px -1px #fff,inset 1px 1px #0a0a0a,inset -2px -2px #dfdfdf,inset 2px 2px grey;text-shadow:1px 1px #222}
+ 
+@media (not(hover)){
+	button:not(:disabled):hover {
+    box-shadow:inset -1px -1px #fff,inset 1px 1px #0a0a0a,inset -2px -2px #dfdfdf,inset 2px 2px grey}
+}
+ 
+.title-bar-controls button:focus {outline:1px dotted #000; outline-offset:-4px}
+.title-bar-controls button::-moz-focus-inner {border:0}
+ 
+ 
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url("https://files.catbox.moe/1za99g.woff") format("woff");
+  src: url("https://files.catbox.moe/8fwbkl.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url("https://files.catbox.moe/z7csle.woff") format("woff");
+  src: url("https://files.catbox.moe/moqhx6.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+ 
+ 
+.window, .title-bar {
+  font-family: "Pixelated MS Sans Serif", Arial;
+  -webkit-font-smoothing: none;
+  font-size: 11px;
+}
+ 
+.window {
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px #808080, inset 2px 2px #ffffff;
+    background: #c0c0c0;
+    padding: 3px;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 140px;
+}
+ 
+.title-bar {
+  background:linear-gradient(90deg,navy,#1084d0);
+  padding: 3px 2px 3px 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.title-bar-text {
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0;
+  margin-right: 24px;
+}
+ 
+.title-bar-controls {
+  display: flex;
+}
+ 
+.title-bar-controls button {
+  padding: 0;
+  display: block;
+  min-width: 16px;
+  min-height: 14px;
+}
+ 
+.title-bar-controls button:active {
+  padding: 0;
+}
+ 
+.title-bar-controls button:focus {
+  outline: none;
+}
+ 
+.title-bar-controls button[aria-label=Minimize]{
+background-image:url("https://raw.githubusercontent.com/jdan/98.css/main/icon/minimize.svg");
+background-position:bottom 3px left 4px;
+background-repeat:no-repeat}
+ 
+.title-bar-controls button[aria-label=Maximize]{
+background-image:url("https://raw.githubusercontent.com/jdan/98.css/4a2282dd9170cabf730fb5803d1153d86b2e94e3/icon/maximize.svg");
+background-position:top 2px left 3px;
+background-repeat:no-repeat}
+ 
+.title-bar-controls button[aria-label=Close]{
+background-image:url("https://raw.githubusercontent.com/jdan/98.css/main/icon/close.svg");
+background-position:top 3px left 4px;
+background-repeat:no-repeat;
+margin-left:2px}
+ 
+.window-body {
+  margin: 8px;
+}
+ 
+/* literally only part ive custom coded so it scrolls V */
+.fieldset {
+    border: 1px gray solid;
+    box-shadow: white 1px 1px 0px inset, white 1px 1px 0px, white 0px 1px 0px, white 1px 0px 0px;
+    margin: 0;
+    padding: 10px;
+    overflow-y: auto;
+    height: 190px;
+    background: white;
+    color: #222;
+}
+</style>
+
+<!--TV SET FILTER-->
+
+<style>
+.lines {
+position: fixed;
+left: 0;
+top: 0;
+width: 100vw;
+height: 100vh;
+pointer-events: none;
+z-index: 300;
+opacity: 0.05;
+}
+ 
+.lines:before {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+pointer-events: none;
+background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+background-size: 100% 4px;
+will-change: background, background-size; animation: scanlines 0.2s linear infinite;
+}
+ 
+@keyframes scanlines {
+from {
+background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .5) 51%); background-size: 100% 4px; }
+to {
+background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
+background-size: 100% 4px;
+}
+}
+@media only screen and (max-width: 600px);
+{
+</style>
+
+  </head>
+  
+ 
+  <body>
+  
+   <div class="lines"></div>
+      
+      
+     <img class="floater" src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/98a8a387.gif">
+      
+<div id="structure" style="margin-top:20px;">
+    
+<!--STRUCTURES LEFT-->
+    
+<aside class="left" style="margin-left:100px;">
+<div class="header">
+    <h1>NORK2004.NET</h1>
+</div>
+
+<div id="main">
+
+<div id="contain">
+    
+<!--LEFT-->
+
+    <aside class="left" style="flex-wrap: wrap; display: flex;">
+                <div class="main">
+                    <h1 class="mainhead">welcome</h1>
+                    <div class="maininner">
+            <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/hgfhg.gif" style="width:100px; float:left; margin-right:4px; filter: drop-shadow(0px 0px 5px #000000);">
+            <p><img src="https://caterpie.crd.co/assets/images/gallery01/d632b10d.gif?v=ce36ac9f"> <b>where am i?</b> - this is <b>nork2004</b> a website made by a strange individual. this is my little corner on the web, filled with my passions and messy little coding. whatever interests me goes right here. </p>
+            
+            <p>this site might update quite often, due to the sudden bursts of energy and creativity when it comes to html and css. i get completely immursed, staying up all night just typing away on my little keyboard while blocking out everything around me. its a thing that will never leave my head, like its apart of me.</p>
+            
+            <p style="margin-bottom:3px;">if you happen to like this site, feel free to leave a comment, or link me back using my button.</p>
+            
+            <center> <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/349aa09d.png"></center>
+            </div>
+        </div>
+        
+        <div class="webmaster">
+                      <h2 class="webhead">webmaster</h2>
+      <div class="webinner">
+          <a href="#" data-toggle="tooltip" title="maow" class=""><img src="https://i.pinimg.com/564x/c6/b6/ae/c6b6ae6ad7882b1657720dca4e20f921.jpg" style="width:100px; height:100px; float:left; margin-right:3px; border:1px solid black;"></a>
+     
+      
+
+      <div class="details">
+          <div style="margin-top:3px">
+          <a href="https://www.imood.com/users/nork"><img src="https://moods.imood.com/display/uname-nork/fg-000/trans-1/imood.gif" alt="The current mood of nork at www.imood.com" border="0"></a></div>
+          
+          
+<p><b>any/all  19  black  intp</b></p>
+      <p>hi im nork, the owner of this site. i like many things, but they are mainly horror and coding. <img src="https://watermelon.crd.co/assets/images/gallery05/dba95250.gif?v=ab2f6a73"></p>
+      </div>
+      
+      <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=nork" defer></script>
+      
+     </div>
+        </div>
+        
+        <div class="linkme">
+            <div class="linkinner">
+            <span class="linktitle">link me</span>
+            <br>
+            <img src="https://file.garden/ZAkEYVkUN2HXHCu3/nork2004button.png">
+            <br>
+            <br>
+            <textarea style="width:88px;color:darkblue"><a href="https://nork2004.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/nork2004button.png"></a></textarea>
+            <span class="linktitle">site stats</span>
+            <br>
+            last updated:
+            <br>
+            3/31/2024
+            <br>
+            <br>
+            <!-- FC2 Counter  Starts here -->
+<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=89505369"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=89505369" /></noscript>
+<!-- FC2 Counter  Ends here -->
+            </div>
+        </div>
+
+    </aside>
+    
+ <!--RIGHT-->
+    
+    <aside class="right">
+    
+<h2 class="navhead">directory</h2>
+        <div class="navigation">
+            <marquee style="background: lightgrey; width:216px; border:2px solid black; font-size:16px;"><b>ANNOUNCEMENT:</b> REVERTED LAYOUT BACK TO V1 AND KEEPING IT THAT WAY!!!</marquee>
+            <ul>
+                <h2 class="lihead">personal</h2>
+                <li><a href="/webmaster">webmaster</a> <img src="https://wilardo.crd.co/assets/images/gallery27/a3ab850c.gif?v=bca827db"></li>
+                <li><a href="/blog">blog</a> <img src="https://wilardo.crd.co/assets/images/gallery04/95718630_original.gif?v=bca827db"></li>
+                <li><a href="/music">music</a> <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/jZvzhTA.gif"></li>
+                
+                <li><a href="/medialog">medialog</a> <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/uXwF7T5.gif"></li>
+                <li><a href="/maya">wife</a> <img src="https://wilardo.crd.co/assets/images/gallery27/edf97b53.gif?v=bca827db"></li>
+                <li><a href="/photos">photos</a> <img src="https://wilardo.crd.co/assets/images/gallery23/9779ac37.gif?v=bca827db"></li>
+                
+                <h2 class="lihead">art</h2>
+                <li><a href="/art">my art</a> <img src="https://64.media.tumblr.com/a5938a48b27ff1036f8b53caf072a950/e530cedacf80aa8e-44/s75x75_c1/30bb0d94570e15c2407a959199d81dc378dcb045.gifv"></li>
+                <li><a href="/ocs">ocs</a> <img src="https://i.imgur.com/8i3lRYS.gif"></li>
+                
+                <h2 class="lihead">library</h2>
+                <li><a href="/not_found">sitemap</a> <img src="https://wilardo.crd.co/assets/images/gallery04/3e49a6f8.png?v=bca827db"></li>
+                
+                <li><a href="/shrines">shrines</a> <img src="https://supplies.ju.mp/assets/images/tiny1/e7d07084.gif?v=602998d9"></li>
+                <li><a href="/resources">resources</a> <img src="https://watermelon.crd.co/assets/images/gallery10/fb06b652.gif?v=2a41aca3"></li>
+                <li><a href="/templates">templates</a> <img src="https://watermelon.crd.co/assets/images/gallery05/758e750e.gif?v=2a41aca3"></li>
+                
+                <li><a href="https://nork.123guestbook.com/">guestbook</a> <img src="https://wilardo.crd.co/assets/images/gallery28/99ed185f.gif?v=b62e9456"></li>
+            </ul>
+        </div>
+        
+    </aside>
+    
+</div>
+
+<!--STAMPS TRAIN START-->
+
+<div class="stamps">
+    <marquee behavior="alternate">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/3dssa.png">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/windowsxp.gif">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/d2b7dhk-20717355-c075-4a6e-8dbd-a3661219b64f.png">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/VcqR2S2.png">
+        <img src="https://wilardo.crd.co/assets/images/gallery13/f1d28d9f.png?v=bca827db">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/d1pcd89-903d2bc3-1a95-44c4-9384-d9866253a5aa.gif">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/d25nbhm-3bb04766-fc33-49b7-b2e3-6b303cca09e0.png">
+        <img src="https://wilardo.crd.co/assets/images/gallery16/633d42b2.png?v=bca827db">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/d9wmxh3-eb148dd1-a1c0-4509-8e5b-e6039612707d.gif">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/dfvwsgz-30dbf85f-d719-424b-976e-089b1f1ee78b.png">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/tally_hall_stamp_by_shimoof0x-d6oce6u.gif">
+        <img src="https://autism.crd.co/assets/images/gallery05/2c6adb0d.jpg?v=aaa3f391">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/d9hpxae-e423d8c7-8ba7-448b-93a2-b92a5539908a.png">
+        <img src="https://wilardo.crd.co/assets/images/gallery08/f682c062.gif?v=bca827db">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/d2w1ilt-6763e5c7-8b91-48a6-8026-76dfa8a41934.png">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/lbp.gif">
+        <img src="https://wilardo.crd.co/assets/images/gallery08/87f7268f.gif?v=bca827db">
+        <img src="https://wilardo.crd.co/assets/images/gallery16/8fe62882.png?v=bca827db">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/day9ekf-6f86d9e8-a86b-48ad-a90f-d0f5cc86c4d3.png">
+        <img src="https://64.media.tumblr.com/68e15d324b6eb7d0fadc482346d9ddd5/248fdf69447e0bcb-92/s250x250_c1/f768ac574a05a32ca92a48def6613e9e75653094.gifv">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/i_love_anything_paranormal_by_ladykatrianna.gif">
+        </marquee>
+</div>
+
+<!--STAMPS TRAIN END-->
+
+<div id="contain2">
+    
+    <aside class="left" style="display:flex;">
+
+        
+        <iframe class="webampz" src="https://nork2004.neocities.org/subpages/webamp.html"></iframe>
+    </aside>
+    
+    <aside class="right" style="display:flex; flex-wrap:wrap;">
+      <div class="featurez">
+<h2 class="feathead">whats new?</h2>
+<div class="featinner">
+    <span class="feattitle">none at the moment!</span>
+    <img class="featimg" src="https://file.garden/ZAkEYVkUN2HXHCu3/bliss-600dpi.png" style="width: 316px;height: 162px;border: double black;">
+    
+</div>
+<h2 class="updatehead">updates</h2>
+<iframe class="updates" src="https://nork2004.neocities.org/subpages/updates.html">
+</iframe>
+
+  </div>
+  
+<!--SITES I LIKE-->
+  
+  <div class="featsites">
+      <h2 class="marqueehead">sites</h2>
+      <marquee class="sitemarq" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+      
+      <a href="https://foggybear42.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/foggybear.gif" alt="foggybear42"></a>
+      <br>
+      <br>
+      <a href="https://antiamorous.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/antiamobutton.gif" alt="antiamorous"></a>
+      <br>
+      <br>
+          <a href="https://mikufan3939.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/mikuhell2.png" alt="mikufan3939"></a>
+      <br>
+      <br>
+          <a href="https://goooby.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/goobbutton3.gif" alt="goooby"></a>
+      <br>
+      <br>
+          <a href="https://monsieurdoll.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/monsieurdoll.png" alt="monsieurdoll"></a>
+      <br>
+      <br>
+          <a href="https://hatsu.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/hatsuneocities.gif" alt="hatsu"></a>
+      <br>
+      <br>
+          <a href="https://ruralrose.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/ruralrose.gif" alt="ruralrose"></a>
+      <br>
+      <br>
+          <a href="https://butt0n-z.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/buttonzsite.png" alt="butt0n-z"></a>
+      <br>
+      <br>
+          <a href="https://bruisedgh0st.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/site%20button.gif" alt="bruisedgh0st"></a>
+      <br>
+      <br>
+          <a href="https://0rion.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/orion.gif" alt="0rion" width="88" height="31"></a>
+      <br>
+      <br>
+          <a href="https://predictable1993.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/predictabannerr.gif" alt="predictable1993"></a>
+      <br>
+      <br>
+          <a href="https://anewchanceanewday.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/nerdyartist.gif" alt="anewchanceanewday"></a>
+      <br>
+      <br>
+          <a href="https://shinyexe.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/shiny.gif" alt="shinyexe"></a>
+      <br>
+      <br>
+          <a href="https://poetofu.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/poetofu.png" alt="poetofu"></a>
+          <br>
+          <br>
+          <a href="https://cardcaptors.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/cardcaptorsbutton.gif" alt="cardcaptor"></a>
+          <br>
+          <br>
+          <a href="https://nonkiru.art/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/nonkiru_button_light.gif" alt="nonkiru.art"></a>
+          <br>
+          <br>
+          <a href="https://fuchi.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/fuchibutton.jpeg" alt="fuchi"></a>
+          <br>
+          <br>
+          <a href="https://doqmeat.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/doqmeat.png" alt="doqmeat"></a>
+          <br>
+          <br>
+          <a href="https://mypillowfort.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/pillow.jpeg" alt="mypillowfort"></a>
+          <br>
+          <br>
+          <a href="https://sai12.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/sai.png" alt="sai12"></a>
+          <br>
+          <br>
+          <a href="https://indylandia.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/indy.png" alt="indylandia"></a>
+          <br>
+          <br>
+          <a href="https://starlost.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/starlost.png" alt="starlost"></a>
+          <br>
+          <br>
+          <a href="https://nymphblood.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/primordial%20dungeon.gif" alt="nymphblood"></a>
+          <br>
+          <br>
+          <a href="https://vampire-aster.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/vampireaster.gif" alt="vampire-aster"></a>
+          <br>
+          <br>
+          <a href="https://callus.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/callusbutton.png" alt="callus"></a>
+          <br>
+          <br>
+          <a href="https://macaque.moe/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/macaque.png" alt="macaque.moe"></a>
+          <br>
+          <br>
+          <a href="https://resonancecascade.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/sitemoots/resonancecascadebutton.png" alt="resonancecascade"></a>
+
+      </marquee>
+  </div>
+  
+       </aside>
+       
+</div>
+
+
+</div>
+
+
+ <!--FOOTER-->
+ 
+<div class="footer">
+    
+    <center><h4>hosted on neocities - contact: nork2004@proton.me</h4></center>
+</div>
+
+</aside>
+
+<!--STRUCTURES RIGHT-->
+
+<aside class="right">
+    
+<!--CBOX START--> 
+<div class="window" style="
+    width: 220px;
+    margin-top: 160px;
+">
+  <div class="title-bar">
+    <div class="title-bar-text">chatbox</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <div class="fieldset" style="
+    height: 310px;
+    padding: 0;
+">
+ <iframe src="https://www3.cbox.ws/box/?boxid=3522373&amp;boxtag=IbgBG3" width="202" height="308" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+</div>
+  </div>
+</div>
+<!--CBOX END--> 
+
+<!--WEEKLY IMAGE START--> 
+<div class="window" style="
+    margin-top: 30px;
+    width: 220px;
+">
+  <div class="title-bar">
+    <div class="title-bar-text">image of the day</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <div class="fieldset" style="
+    height: 200px;
+    padding: 0;
+    overflow: hidden;
+">
+  <img src="https://i.pinimg.com/564x/c2/20/13/c220138d033dae4ea7060c407cf6bd5d.jpg" style="
+    width: 202px;
+    height: 202px;
+">
+</div>
+  </div>
+</div>
+<!--WEEKLY IMAGE END--> 
+
+<!--TO-DO-LIST START--> 
+<div class="window" style="
+    width: 220px;
+    margin-top: 200px;
+">
+  <div class="title-bar">
+    <div class="title-bar-text">to-do list</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <div class="fieldset" style="
+    height: 180px;
+    padding: 5px;
+">
+  <ul style="padding-left: 15px;">
+
+      <li>figure out what rss is and add it LMFAO</li>
+      <li>dude i really gotta add a featured page</li>
+      <li>finish medialog sometime later lol...</li>
+      <li>add my art page GUHHH</li>
+  </ul>
+  <br>
+  <ul style="padding-left: 15px;">
+      <li>finish pages:8/12</li>
+  </ul>
+</div>
+  </div>
+</div>
+<!--TO-DO-LIST END--> 
+
+</aside>
+
+</div>
+
+
+  </body>
+</html>

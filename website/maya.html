@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILOVEYOU</title>
+    <link rel="icon" type="image/x-icon" href="https://wilardo.crd.co/assets/images/gallery27/edf97b53.gif?v=bca827db">
+    
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+
+    
+<style>
+
+body {
+    display:block;
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    font-family:ms ui gothic;
+}
+
+html {
+    animation: moveIt 90s linear infinite;
+    background:url(https://foollovers.com/mat/heart/d14-bg-heart.gif);
+}
+
+ @keyframes moveIt {
+from {background-position: bottom left;}
+to {background-position: top right;}
+
+}
+
+
+#structure {
+    margin-top:90px;
+}
+
+.container {
+    width: 580px;
+    height: 380px;
+    margin-right: auto;
+    border: 2px solid black;
+    padding: 5px;
+    background: url(https://foollovers.com/mat/plaid02/ab08-bg-checked.gif);
+    border-width: 12px;
+    border-style: solid;
+    border-image: url(https://i.imgur.com/gTFIwdW.png) 11 round;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 50px;
+}
+
+.inner {
+    border:1px solid rgba(255, 200, 200, 0.8);
+    padding:5px;
+    width:auto;
+    background:white;
+    background: linear-gradient(180deg, rgb(255, 207, 213) 22%, rgb(255, 236, 231) 68%, rgb(255, 252, 237) 83%, rgba(255,255,255,1) 100%);
+    box-shadow: 0 0 5px 2px #fff inset, 0 -30px 50px #fff inset;
+    outline: 1px solid #ff708d;
+}
+
+.inner2 {
+    border:1px solid #ff708d;
+    padding:5px;
+    width:auto;
+    background:white;
+    margin-top:5px;
+    border-radius:5px;
+    outline: 1px solid white;
+}
+
+.head {
+    margin: 0px;
+    font-size: 5em;
+    margin-left: 60px;
+    font-style: italic;
+    background: linear-gradient(to top, #FFE0ED 0%, #FF78B1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ff708d;
+    
+}
+
+.heading {
+    font-size: 1.6em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    margin: 0px;
+    background: linear-gradient(to top, #ffd1d1, white);
+    border: 1px solid #ff708d;
+    border-radius: 5px;
+    padding:2px;
+    box-shadow: 0 0 5px 2px #fff inset, 0 -8px 3px #fff inset;
+    outline: 1px solid white;
+    text-align:center;
+}
+
+.heading2 {
+    margin:5px;
+    font-size:1.6em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    text-align:center;
+}
+
+.timer {
+    padding:5px;
+    text-align:center;
+}
+
+.photo {
+    width:168px;
+    border:1px solid #ff708d;
+    margin-top:5px;
+    border-radius:5px;
+}
+
+.something {
+    margin-top:5px;
+    border:1px solid #ff708d;
+    outline: 1px solid white;
+    background:white;
+    padding:4px;
+    height:150px;
+    border-radius:5px;
+}
+
+ul {
+    padding-left:20px;
+}
+
+li {
+    margin-top:5px;
+}
+
+/* SONG MARQUEE */
+
+.nowplaying {
+    position: fixed;
+    color: white;
+    bottom: 4px;
+    left: 5px;
+    font-size: 16px;
+        font-weight: bold;
+    font-family: ms gothic;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    z-index:10;
+}
+  
+</style>
+
+<style>
+  .violet::before,
+  .violet > .title-bar {
+    background-color: pink;
+  }
+  
+  #clock {
+    width: 270px;
+    position: absolute;
+    transform: translate(660px, 70px);
+    z-index: 5;
+}
+
+#sillies {
+    position: absolute;
+    transform: translate(660px, 170px);
+    width: 270px;
+    z-index: 5;
+}
+
+</style>
+
+<style>
+::-webkit-scrollbar {
+width: 16px
+}
+ 
+::-webkit-scrollbar:horizontal {
+height: 17px
+}
+ 
+::-webkit-scrollbar-corner {
+background: #eee
+}
+ 
+::-webkit-scrollbar-track:vertical {
+background: linear-gradient(90deg, #e5e5e5, #f0f0f0 20%)
+}
+ 
+::-webkit-scrollbar-track:horizontal {
+background: linear-gradient(180deg, #e5e5e5, #f0f0f0 20%)
+}
+ 
+::-webkit-scrollbar-thumb {
+border: 1.5px solid #888;
+border-radius: 3px;
+box-shadow: inset 0 -1px 1px #fff, inset 0 1px 1px #fff;
+background-color: #eee;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAIAAADpZ+PpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADrSURBVChTTc5LboJQGAXguyoCu4ERCzAGlRk7UOwGWIDh0s4M4kxb06RSq/jAB6AxJkJ4lTDrue3AnvyzP+fLId+/yfM8juP7PQmCCOf7B3e+ZD+O40RRVFW12VQUpd3r9U3T2m4OpKoqWZYNwzBZLEqfh0N7NnvfrPcEWlEUWZb9mWF4Ph6D0ylcLbfM5HkeJrhGA2hb15/QXnv+w7RYXsDatjOdvnmrHSnLEizMNE2v11sUXQBCnn98kbquBUGQJAlmq9WB2e3qg4HJdqKkaRql1HGc0WgMcDJ5dd0F24kediZJ8t/ELT69H+8py0CYSIO5AAAAAElFTkSuQmCC") no-repeat 50%, linear-gradient(90deg, #eee 45%, #ddd 0, #bbb)
+}
+ 
+::-webkit-scrollbar-thumb:horizontal {
+background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADcSURBVChTNZBLqoUwEEQrURQUxZGCvy24ACfiityJi7tv8GauQoPxk5tquA2RQ9vVVYk6z9NZaxFFEe77htYazjk8z4MwDIVZ+rourOuKaZrwvi+WZcE8z1BKCbPPCjk4DAO2bRP1OI7wLiL6Mbd7J408z1GWpQwWRYGqqiQG+03TgMu0MacfUN4qANmn8UOv9MjW3sKaSm7iIdOSlziOQ3LScd93aPonSYK6riVLlmVo21aYfVqzND9pmqLrOlGT+76XbcxLZkb19/l3fEP+oF0cx8KMEASBsDEGX2/CgZCHkg+8AAAAAElFTkSuQmCC") no-repeat 50%, linear-gradient(180deg, #eee 45%, #ddd 0, #bbb)
+}
+ 
+::-webkit-scrollbar-button:horizontal:end:increment,
+::-webkit-scrollbar-button:horizontal:start:decrement,
+::-webkit-scrollbar-button:vertical:end:increment,
+::-webkit-scrollbar-button:vertical:start:decrement {
+display: block
+}
+ 
+::-webkit-scrollbar-button:vertical {
+height: 17px
+}
+ 
+::-webkit-scrollbar-button:vertical:start:decrement {
+background: white;
+background-image: url("https://cdn.discordapp.com/attachments/904308736712138793/1001299199633141851/download.png");
+background-repeat: no-repeat;
+background-position: center;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+ 
+::-webkit-scrollbar-button:vertical:start:increment {
+display: none;
+}
+ 
+::-webkit-scrollbar-button:vertical:end:decrement {
+display: none;
+}
+ 
+::-webkit-scrollbar-button:vertical:end:increment {
+background: white;
+background-image: url("https://cdn.discordapp.com/attachments/904308736712138793/1001299200052576387/87ae92e1-3894-4469-b1b9-aedf5f04975c.png");
+background-repeat: no-repeat;
+background-position: center;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+ 
+</style>
+
+     <style>
+.lines {
+position: fixed;
+left: 0;
+top: 0;
+width: 100vw;
+height: 100vh;
+pointer-events: none;
+z-index: 300;
+opacity: 0.05;
+}
+ 
+.lines:before {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+pointer-events: none;
+background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+background-size: 100% 4px;
+will-change: background, background-size; animation: scanlines 0.2s linear infinite;
+}
+ 
+@keyframes scanlines {
+from {
+background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .5) 51%); background-size: 100% 4px; }
+to {
+background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
+background-size: 100% 4px;
+}
+}
+@media only screen and (max-width: 600px);
+{
+</style>
+
+  </head>
+  <body>
+  
+   <div class="lines"></div>
+      
+      <div class="window violet active" id="clock" style="max-width: 100%; margin: 0 1.5em;">
+  <div class="title-bar">
+    <div class="title-bar-text">days with maya</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+      
+    <div class="timer">
+
+<script language="JavaScript">
+TargetDate = "2022-04-02T05:00:00";
+BackColor = "";
+ForeColor = "black";
+CountActive = true;
+CountStepper = 1;
+LeadingZero = true;
+DisplayFormat = "%%D%% Days, %%H%% Hours, %%M%% Minutes, %%S%% Seconds.";
+FinishMessage = "It is finally here!";
+</script>
+<script language="JavaScript" src="https://rhashemian.github.io/js/countdown.js"></script>
+</div>
+
+  </div>
+</div>
+
+      <div class="window violet active" id="sillies" style="max-width: 100%; margin: 0 1.5em;">
+  <div class="title-bar">
+    <div class="title-bar-text">sillies</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space" style="height:250px; overflow:auto; text-align:center;">
+      
+<img src="https://i.pinimg.com/564x/4f/8a/e0/4f8ae0465b431eac99c54b638cff923b.jpg" width="200">
+
+<img src="https://i.pinimg.com/564x/db/da/b5/dbdab5feb525af41f6d2b85211d12095.jpg" width="200">
+
+<img src="https://i.pinimg.com/564x/fe/8a/1d/fe8a1d808217230bc07c23ca7ce43315.jpg" width="200">
+
+<img src="https://i.pinimg.com/originals/d7/59/8b/d7598b4fdd67e84feb61e8d456515f58.gif"  width="200">
+
+<img src="https://i.pinimg.com/564x/72/d1/26/72d126cffd63bab56ba6acf183ac2b1f.jpg" width="200">
+
+<img src="https://i.pinimg.com/564x/3c/81/5a/3c815a1df7819307ba586db5d3be22f1.jpg" width="200">
+
+<img src="https://i.pinimg.com/564x/53/06/7c/53067c52e23d027ae8abbb463d2e6adc.jpg" width="200">
+
+<img src="https://i.pinimg.com/564x/73/fd/82/73fd82c85e5781ec3212e688568919e4.jpg" width="200">
+
+<img src="https://i.pinimg.com/564x/69/8a/70/698a703d724d7c5158c967b86fc9b4c8.jpg" width="200">
+  </div>
+</div>
+
+      
+<div id="structure">
+
+<h1 class="head">maya lovemail</h1>
+    
+<div class="container">
+            <div class="inner" style="margin-right:5px; width:170px; overflow:auto;">
+        <h1 class="heading"> ♡ </h1>
+        <img class="photo" src="https://i.pinimg.com/564x/a2/04/5b/a2045b1a5b07ce498c0edfbbf2c5a40b.jpg">
+        <div class="something">
+            <h2 class="heading2">things</h2>
+
+            <ul>
+                <li><a href="https://adoration.neocities.org/">h♡r website</a></li>
+                <li><a href="https://open.spotify.com/playlist/4SaPpFJ2x8PgInoDJRzDwy?si=07e583dc55234a11">my playlist for bloom</a></li>
+                <li><a href="">board for h♡r</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="inner" style="width:380px; overflow:auto;">
+        <h1 class="heading">MY LETTER</h1>
+        
+       <div class="inner2">
+           <center><img src="https://caterpie.crd.co/assets/images/gallery14/acc694b9.png?v=ce36ac9f"></center>
+           <p><img src="https://supplies.ju.mp/assets/images/tiny1/836fe0ae.gif?v=6a50b904">  this is a page dedicated to my lovely <s>wife</s> girlfriend.</p>
+           
+           <p>i have many words for you, many that i can't fit into one single message. so i spill them all out in a form of code, just for you.</p>
+           
+           <p></p>
+       </div>
+
+       <div class="inner2">
+<img src="https://nukocities.neocities.org/nuko/react/cat161.gif" style="float:left;">
+           <p>all i do is look forward to seeing you. everytime i wake up for the day, my thoughts instantly contain you as if its on autopilot. to be honest, ive never felt that way towards anyone. it gives me conflicting feelings between romanticism and platonicism, making my heart feel heavy in my chest. when i do feel those feelings, especially romantic, it feels like its eating me from the inside out, or a cupids arrow has struck me in the chest. its an intense feeling sometimes, but thats okay.</p>
+           
+           <p>i have days where i go back to the memories we shared thus far. replaying every moment and scene in my head, smiling to myself as i take apart those memories and think about the things you said or did that made me laugh, smile, and grow my overbearing love for you.</p>
+           
+           <p>you genuinely have an amazing heart, from how much you make me feel better despite the things i go through at times. and thats what i want to do in return, i want you to feel your most best when we are together. i always want to try to make every day count, to where i set things aside only for us, even if i don't have to. </p>
+           
+           
+           <p>i get inspired by you more than i can admit, to most of my creations always comes from you. i would be lying if i said you weren't my muse, especially when it comes to my hand in drawing. you're the person that keeps my hand on a pen, creating illustrations or doodles when most of the time i can't think of an idea at all. its something that amazing me when i think about it.</p>
+           
+           <p>and when i create, its under how creative you are. it makes me admire how much time and love you put into your little things, the detailed personalities of your original characters, stories, etc. i sometimes envy your talent in that.</p>
+           
+           <p>all i want to do is see you, ive been having that thought in my mind for as long as i met you. even if i do "see you", i want to keep seeing you, everyday. and thats because i love you, i love you so much to where i think its <i>too much</i>. but there is never a too much when it comes to you.</p>
+           
+           04.02.22 ♡
+       </div>
+        
+    </div>
+    
+
+</div>
+    
+</div>
+
+<span class="nowplaying"> <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/196e7c93.gif"> hikaru utada - automatic </span>
+
+<audio id="audio1" autoplay loop onloadeddata="setHalfVolume()"><source src="https://file.garden/ZAkEYVkUN2HXHCu3/mp3/UTADA%20HIKARU%20-%20Automatic.mp3"></audio>
+
+<script>
+      function setHalfVolume() {
+        var myAudio = document.getElementById("audio1");  
+        myAudio.volume = 0.5; 
+      }
+    </script>
+
+
+  </body>
+</html>

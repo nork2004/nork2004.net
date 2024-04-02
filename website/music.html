@@ -1,0 +1,1339 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://nork2004.neocities.org/styling/scrollbar.css">
+    <title>twerks</title>
+    
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/x-icon" href="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/jZvzhTA.gif"> 
+    
+<style>
+    
+body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: ms ui gothic;
+    overflow: auto;
+    background: black;
+    background-attachment: fixed;
+}    
+    
+
+#structure {
+    z-index: 3;
+    position: relative;
+}
+
+.header {
+    width: 723px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    height: 170px;
+    border-radius: 100px 10px 0 0;
+    background: url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/uijkhy.png);
+    background-size: contain;
+    box-shadow: inset 0px 0px 0px 1px white, inset 0px 0px 2px 2px #ffffff66;
+        font-family: 'Genos', sans-serif;
+     color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+    font-size: 3.2em;
+    webkit-background-clip: text;
+     box-shadow: inset 0px 0px 1px 1px white, 0 0 4px #ffffff;
+     overflow:hidden;
+}
+
+.header h1 {
+    transition: all 0.5s;
+}
+
+.header h1:hover {
+    webkit-filter: blur(0.5px);
+filter: blur(2px);
+}
+
+.container {
+    width: 713px;
+    border: 2px solid black;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/ue88d9f.png);
+    box-shadow: inset 0px 0px 0px 1px white, inset 0px 0px 2px 2px #ffffff66, 0 0 4px #ffffff;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    
+}
+
+.right {
+    
+}
+
+.headings {
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 10px 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-style: italic;
+    background: linear-gradient(to top, #5256b3, #cadbff, #5256b3);
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000, 4px 3px red;
+    color: white;
+    font-family: 'Genos', sans-serif;
+    margin-top: 0px;
+    box-shadow: inset 0px 0px 0px 1px white, inset 0px 0px 2px 2px #ffffff66;
+}
+
+/* MAIN SECTION */
+
+.main {
+    width: 460px;
+    height:331px;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    background: linear-gradient(to top, #c1c1c1, white);
+    box-shadow: 0px 0px 0px 1px white, inset 0px 0px 3px 2px #8f8fff;
+}
+
+
+#links a {
+    font-weight:bold;
+        color:red;
+        text-decoration:none;
+}
+
+#links a:hover {
+    font-style:italic;
+}
+
+
+.inner {
+    border: 1px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: inset 0px 0px 3px 2px #8f8fff;
+    background:url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/veHzqhf.png);
+    overflow:auto;
+}
+
+.inner p {
+    transition: all 0.5s;
+}
+
+.inner p:hover {
+    color:red;
+}
+
+/* STAMPS SECTION */
+
+.marq {
+    border: 2px solid black;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background: linear-gradient(to top, #c1c1c1, white);
+    box-shadow: 0px 0px 0px 1px white, inset 0px 0px 3px 2px #8f8fff;
+    height: 64px;
+    width: 460px;
+}
+
+/* MUSIC VIDEO PLAYER SECTION */
+
+.MVplayer {
+    width: 220px;
+    padding: 5px;
+    margin-left: 5px;
+    border: 2px solid black;
+    background: url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/359zh9dvul961.png);
+    background-size:contain;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1px white, inset 0px 0px 0px 1px white, inset 0px 0px 2px 2px #ffffff66;
+}
+
+.player {
+    -webkit-clip-path: polygon(12% 14%, 73% 27%, 65% 81%, 8% 64%);
+    clip-path: polygon(12% 14%, 73% 27%, 65% 81%, 8% 64%);
+    width: 230px;
+    height: 250px;
+    background: black;
+    position: absolute;
+    transform: rotate(80);
+    transform: translate(-230px, -19px);
+}
+
+.MVplayer ul {
+    padding-left: 20px;
+    margin-top: 6px;
+}
+
+.MVplayer li {
+    margin-bottom: 5px;
+    background: linear-gradient(to left, #ffb3b3, transparent);
+    border-radius: 10px;
+}
+
+.MVplayer a {
+    color: black;
+    font-size:13px;
+    text-decoration:none;
+}
+
+.MVplayer a:hover {
+    color:blue;
+    font-style:italic;
+}
+
+.tv {
+    transition: all 0.5s;
+}
+
+.tv:hover {
+    filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px 1px 0 white) drop-shadow(0 2px 0 white) drop-shadow(0 -1px 0 white) drop-shadow(0 1px 1.5px white) drop-shadow(0 -1px 1.5px white) drop-shadow(1px -1px 1.5px white) drop-shadow(-1px -1px 1.5px white);
+}
+
+/* NAV SECTION */
+
+.nav {
+    width:200px;
+    padding:5px;
+    border:2px solid black;
+    border-radius: 10px;
+    background: linear-gradient(to top, #c1c1c1, white);
+    box-shadow: 0px 0px 0px 1px white, inset 0px 0px 3px 2px #8f8fff;
+    height: 175px;
+}
+
+.nav button {
+    width: 100%;
+    margin-bottom: 5px;
+    font-family: ms ui gothic;
+    font-size: 1em;
+    height: 26px;
+    border: 1px solid #ff585e;
+    border-radius: 5px;
+    background: linear-gradient(to top, #ffb2b0 20%, rgb(255 238 238));
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+    color: white;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 0px 1px white;
+}
+
+.nav button:hover {
+    font-style:italic;
+    background: linear-gradient(to bottom, #ffb2b0 20%, rgb(255 238 238));
+}
+
+/* TABCONTENT */
+
+.tabcontent {
+    border: 2px solid black;
+    padding: 5px;
+    width: 479px;
+    margin-left: 5px;
+    border-radius: 10px;
+    height: 300px;
+    background: linear-gradient(to top, #c1c1c1, white);
+    box-shadow: 0px 0px 0px 1px white, inset 0px 0px 3px 2px #8f8fff;
+}
+
+/* LAST FM */
+
+.nowplayingcard {
+    border: 2px solid black;
+    padding: 5px;
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 5px;
+    height: 105px;
+    background: linear-gradient(to top, #c1c1c1, white);
+    box-shadow: 0px 0px 0px 1px white, inset 0px 0px 3px 2px #8f8fff;
+    font-size:12px;
+}
+    
+    .nowplayingcontainer-inner {
+         border: 1px solid red;
+         border-radius: 5px;
+    padding: 5px;
+    background: white;
+    box-shadow: inset 0px 0px 3px 2px #8f8fff;
+    background: url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/veHzqhf.png);
+         overflow: auto;
+          height: 93px;
+        display:flex;
+        gap:5px;
+    }
+
+
+#trackart {
+   width:90px;
+    height:90px;
+    border: 1px solid black;
+    border-radius:5px
+}
+    
+    .nowplayingcard a {
+        color:red;
+        text-decoration: none;
+    }
+    
+     .nowplayingcard a:hover {
+        font-style: italic;
+    }
+    
+
+/* TABCONTENT STUFF */
+
+.content {
+    width: auto;
+    height: 157px;
+    border: 1px solid #ff585e;
+    padding: 5px;
+    border-radius: 10px;
+    background: linear-gradient(to top, #ffb2b0 20%, rgb(255 238 238));
+    box-shadow: inset 0px 0px 0px 1px white, 2px 3px 2px 1px #00000061;
+    text-shadow: 1px 1px white;
+    margin-bottom:5px;
+}
+
+.subhead {
+    font-size: 1em;
+    background: linear-gradient(to left, #70bcff, white);
+    border-radius: 20px;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+    color: white;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding:2px;
+}
+
+.content img {
+    width: 149px;
+    float: left;
+    border: 1px solid black;
+    margin-right: 5px;
+    border-radius: 10px;
+    position:relative;
+    transition: all 0.5s;
+}
+
+.content img:hover {
+    transform: rotate(4deg);
+}
+
+.content p {
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0px;
+    box-shadow: inset 0px 0px 3px 2px #8f8fff;
+    background: url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/veHzqhf.png);
+}
+
+.toe {
+    text-align: center;
+    background: linear-gradient(to left, transparent, #ffb3b3, transparent);
+    margin: 5px;
+    font-weight: normal;
+    text-shadow: 1px 1px white;
+}
+
+/* COLLECTION SECTION */
+
+#album {
+    display: inline-block;
+}
+
+.albumtext {
+    position: sticky;
+    background: rgb(0 0 0 / 70%);
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 140px;
+    height: 140px;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px black;
+    opacity: 0;
+    margin-bottom: -141px;
+    font-size: 11px;
+    transition: all 0.5s;
+    color: white;
+}
+
+#collect .albumtext:hover {
+    opacity: 1;
+}
+
+#collect img{
+    width: 140px;
+    border: 1px solid black;
+    
+}
+
+#log b {
+    background: #ffd6d6;
+}
+
+#log a {
+    color:red;
+    text-decoration:none;
+}
+
+#log a:hover {
+    font-style:italic;
+}
+
+#log hr {
+    margin: 0px;
+    border: solid 1px #ffb3b3;
+}
+
+.bjonk {
+    position: absolute;
+    z-index: -1;
+    transform: translate(-10px, 460px);
+    transition: all 0.5s;
+}
+
+.bjonk:hover {
+    transform: translate(-10px, 450px)
+}
+  
+</style>
+
+<style>
+.lines {
+position: fixed;
+left: 0;
+top: 0;
+width: 100vw;
+height: 100vh;
+pointer-events: none;
+z-index: 300;
+opacity: 0.05;
+}
+ 
+.lines:before {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+pointer-events: none;
+background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+background-size: 100% 4px;
+will-change: background, background-size; animation: scanlines 0.2s linear infinite;
+}
+ 
+@keyframes scanlines {
+from {
+background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .5) 51%); background-size: 100% 4px; }
+to {
+background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
+background-size: 100% 4px;
+}
+}
+@media only screen and (max-width: 600px);
+{
+</style>
+
+<style>
+#s-m-t-tooltip{
+	/* basic */
+	max-width: 300px;
+	z-index: 10;
+	margin: 24px 14px 7px 12px;
+	/* style and design */
+	padding:8px;
+	border-radius:3px;
+    background: black;
+border: 1px solid blue;
+	color: white;
+font-family: ms ui gothic;
+font-size:13px;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+<script>
+							(function($){
+							$(document).ready(function(){
+							$("[title]").style_my_tooltips({
+							tip_follows_cursor: true,
+							tip_delay_time:100,
+							tip_fade_speed:100,
+							attribute:"title"
+							});
+							});
+							})(jQuery);
+</script>
+
+  </head>
+  <body>
+      
+      <div class="lines"></div>
+      
+<div id="structure">
+    
+    <img class="bjonk" title="guys idk i think nork likes björk (layout inspired by the album Homogenic)" src="https://file.garden/ZAkEYVkUN2HXHCu3/web/images/bjonkk.png">
+    
+<div class="header">
+    <h1>music</h1>
+
+</div>
+    
+<div class="container">
+    
+<aside class="left">
+    
+    <div class="main">
+        
+        <div class="headings">
+           ☆ music page
+        </div>
+        
+        <div class="inner" style="height:280px;">
+        
+        <img src="https://64.media.tumblr.com/a45b363343f38485483948011435faf3/8aa3d5cdcd2620e9-15/s500x750/7848c2ce6196a9d6d9a9d93125833dbe1d6a3123.gifv" style="width:174px; float:left; border:black 1px solid; border-radius:10px; margin-right:5px">
+        <p><img src="https://caterpie.crd.co/assets/images/gallery01/d2651a27.gif?v=ce36ac9f"> <b>welcome to my music page!</b> nice for you to stop by. music is one of the many special things to me since i was 12 years old. i like to think that the music i've listened to shaped me into who i am today.</p>
+        
+        <p>this is where i log music, organize my vinyl and cd collection, and share my favorite piece of art that my favorite artist has created. hopefully the media that i share sparks interest in you :-)</p>
+        
+        <p>i am always open to music reccomendations. feel free to leave some in my cbox or my guestbook if you like.</p>
+        
+        <center><span id="links"><a href="https://open.spotify.com/user/hkxzcq58pkei4iv2tmy09hvai">spotify</a> <img src="https://64.media.tumblr.com/348c8c1305e5c31374971064f97ef221/caef1a1795697a84-11/s75x75_c1/128787850bdc770ee79b27b782e681101618b8dd.gifv"> <a href="https://www.last.fm/user/nork2004">lastfm</a></span></center>
+        </div>
+    </div>
+    
+    <div class="marq">
+<marquee style="border: 1px solid red;border-radius: 10px;box-shadow: inset 0px 0px 3px 2px #8f8fff;background: url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/veHzqhf.png);padding: 2px;">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/resources/stamps/music/bjork2.png">
+
+        <img src="https://64.media.tumblr.com/68e15d324b6eb7d0fadc482346d9ddd5/248fdf69447e0bcb-92/s250x250_c1/f768ac574a05a32ca92a48def6613e9e75653094.gifv">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/resources/stamps/music/greenday.png">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/resources/stamps/music/NIN.png">
+       <img src="https://wilardo.crd.co/assets/images/gallery13/7e8a357b.png?v=47044b3a">
+       <img src="https://wilardo.crd.co/assets/images/gallery08/f682c062.gif?v=47044b3a">
+       <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/incubus_fan_stamp_by_german_popsicle_d1ysf9f-fullview.jpg">
+      <img src="https://wilardo.crd.co/assets/images/gallery16/f1c73565.png?v=47044b3a">
+         <img src="https://file.garden/ZAkEYVkUN2HXHCu3/resources/stamps/music/mybloodyvalentine.png">
+           <img src="https://wilardo.crd.co/assets/images/gallery13/58558d64.png?v=47044b3a">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/resources/stamps/music/blankbanshee.png">
+                <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/d23yvn8-d719dbe1-849f-47f7-a1b1-a4abb05a8050.png">
+        <img src="https://wilardo.crd.co/assets/images/gallery24/7eac1b43.png?v=47044b3a">
+        <img src="https://wilardo.crd.co/assets/images/gallery11/3426629a.gif?v=07a8a49e">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/resources/stamps/music/nin2">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/resources/stamps/music/aphextwin.png">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/resources/stamps/music/tallyhall3.pnf">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/resources/stamps/music/thesmiths.png">
+        <img src="https://64.media.tumblr.com/596a0ece1fc80fd7094c7ec00d23d187/e12c84552f5fbb2a-2b/s100x200/2aebfdc879b301c2cc820249008f9c21719e7a17.gifv">
+
+    </marquee>
+    </div>
+    
+</aside>
+
+<aside class="right">
+    
+ 
+    <div class="MVplayer" style="height:414px;">
+           <h2 class="headings">☆ video player</h2>
+        
+        <img class="tv" src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/6w8GZ8g.png" style="width:220px; z-index:2; position:relative; pointer-events:none;">
+        <iframe class="player" name="video" src="https://www.youtube.com/embed/ah5RVGiBqRs?si=1jtKOH_pzZ7l7jax" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <div class="inner" style="height:131px;">
+            <ul>
+                <li><a href="https://www.youtube.com/embed/ah5RVGiBqRs?si=1jtKOH_pzZ7l7jax" target="video">björk : alarm call</a></li>
+                
+                <li><a href="https://www.youtube.com/embed/0P4A1K4lXDo?si=nEKSaVDJtW3MN3Xc" target="video">michael jackson : scream</a></li> 
+                
+                <li><a href="https://www.youtube.com/embed/XV8CxSO5imQ?si=iFKkixN60ihsFkDC" target="video">blur : popscene</a></li>
+                
+                <li><a href="https://www.youtube.com/embed/u7cqkpy4QrQ?si=yLrE-7X0M3F5MZ0q" target="video">lush : sweetness and light</a></li>
+                
+                 <li><a href="https://www.youtube.com/embed/8WEtxJ4-sh4?si=wm-bI0yRWTKg5ind" target="video">tlc : waterfalls</a></li>
+                
+                <li><a href="https://www.youtube.com/embed/PXzuDXZwZtI?si=Z7efBrfSoim5IujK" target="video">incubus : pardon me</a></li>
+                
+                <li><a href="https://www.youtube.com/embed/u5CVsCnxyXg?si=1f4pN1DOC4ZwtqjR" target="video">radiohead : no surprises</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+</aside>
+
+<aside class="left" style="margin-top:5px;">
+        <div class="nav">
+                   <h2 class="headings">
+           ☆ navigation
+       </h2> 
+            <div class="inner" style="height:124px;">
+       <button class="tablinks" onclick="openCity(event, 'loop')">current loop</button>
+       <button class="tablinks" onclick="openCity(event, 'favart')">favorite artists</button>
+       <button class="tablinks" onclick="openCity(event, 'collect')">my collection</button>
+       <button class="tablinks" onclick="openCity(event, 'log')"> my minilog</button>
+       </div>
+    </div>
+    
+    <div class="nowplayingcard">
+                <div class="nowplayingcontainer-inner">
+        <img id="trackart" src="#">
+        <div class="trackInfo" style="display: flex;
+                                      flex-direction: column">
+            <a id="tracktitle"></a>
+            <a href="#" id="trackartist"></a>
+        </div>
+    </div>
+        
+   </div>
+</aside>
+
+<aside class="right" style="margin-top:5px;">
+    
+    <!--LOOP SECTION START-->
+    
+    <div id="loop" class="tabcontent">
+        <h2 class="headings">
+           ☆ current loop
+        </h2>
+        <div class="inner" style="height: 248px;overflow-y: scroll;">
+            
+            <h3 class="toe">february loops</h3>
+            
+            <div class="content">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/af/Bj%C3%B6rk_-_Homogenic.png">
+                <h3 class="subhead">Homogenic</h3>
+               <b>artist</b>: Björk
+                <br>
+                <b>genre</b>: electronica
+                <br>
+                <b>released</b>: 11/20/1997
+                <br>
+                <br>
+                <b>favorite tracks</b>: every track!!
+            </div>
+            
+            <!--CURRENT ALBUM-->
+            
+            <div class="content">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Cocteau_Twins%E2%80%94Heaven_or_Las_Vegas.jpg/220px-Cocteau_Twins%E2%80%94Heaven_or_Las_Vegas.jpg">
+                <h3 class="subhead">Heaven or Las Vegas</h3>
+                <b>artist</b>: Cocteau Twins
+                <br>
+                <b>genre</b>: dream pop
+                <br>
+                <b>released</b>: 11/17/1990
+                <br>
+                <br>
+                <b>favorite tracks</b>: every track!!
+            </div>
+            
+            <!--CURRENT ALBUM-->
+            
+            <div class="content">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Queen_The_Miracle.png/220px-Queen_The_Miracle.png">
+                <h3 class="subhead">The Miracle</h3>
+               <b>artist</b>: Queen
+                <br>
+                <b>genre</b>: rock
+                <br>
+                <b>released</b>: 5/22/1989
+                <br>
+                <br>
+                <b>favorite tracks</b>: the miracle, khashoggi's ship, invisible man, i want it all, breakthru, scandal
+            </div>
+            
+            <!--CURRENT ALBUM-->
+            
+            <div class="content">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Inrainbowscover.png/220px-Inrainbowscover.png">
+                <h3 class="subhead">In Rainbows</h3>
+                <b>artist</b>: Radiohead
+                <br>
+                <b>genre</b>: alternative rock
+                <br>
+                <b>released</b>: 10/10/2007
+                <br>
+                <br>
+                <b>favorite tracks</b>: every track!!
+            </div>
+            
+<!--CURRENT ALBUM-->
+            
+            <div class="content">
+                <img src="https://upload.wikimedia.org/wikipedia/en/b/b1/Blur_Blur.jpg">
+                <h3 class="subhead">Blur</h3>
+                <b>artist</b>: Blur
+                <br>
+                <b>genre</b>: alternative rock
+                <br>
+                <b>released</b>: 2/10/1997
+                <br>
+                <br>
+                <b>favorite tracks</b>: beetlebum, song 2, on your own, you're so great, death of a party
+            </div>
+            
+              <!--CURRENT ALBUM-->
+            
+            <div class="content">
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/47/Fobfolie.jpg">
+                <h3 class="subhead">Folie à Deux</h3>
+                <b>artist</b>: Fall Out Boy
+                <br>
+                <b>genre</b>: alternative rock
+                <br>
+                <b>released</b>: 12/10/2008
+                <br>
+                <br>
+                <b>favorite tracks</b>: pavlove, coffee's for closers, w.a.m.s, 20 dollar nose bleed, tiffany blews
+            </div>
+            
+<!--CURRENT ALBUM-->
+            
+            <div class="content">
+                <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/images/71IzYJAhEsL._UF1000%2C1000_QL80_.jpg">
+                <h3 class="subhead">Morning View</h3>
+                <b>artist</b>: Incubus
+                <br>
+                <b>genre</b>: alternative rock
+                <br>
+                <b>released</b>: 12/23/2001
+                <br>
+                <br>
+                <b>favorite tracks</b>: nice to know you, wish you were here, just a phase, 11am, are you in?
+            </div>
+            
+<!--CURRENT ALBUM-->
+            
+            <div class="content">
+                <img src="https://upload.wikimedia.org/wikipedia/en/5/55/Radioheadthebends.png">
+                <h3 class="subhead">The Bends</h3>
+                <b>artist</b>: Radiohead
+                <br>
+                <b>genre</b>: alternative rock
+                <br>
+                <b>released</b>: 3/13/1995
+                <br>
+                <br>
+                <b>favorite tracks</b>: every track!!
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    <!--LOOP SECTION END-->
+    
+    <!--FAV ARTISTS SECTION START-->
+    
+    <div id="favart" class="tabcontent" style="display:none;">
+        <h2 class="headings">
+           ☆ favorite artists
+        </h2>
+        <div class="inner" style="height: 248px;">
+            
+           <div class="content" style="height:auto;">
+                <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/images/83ed218c0f59a105fea51eb3c19352ca.png">
+                <h3 class="subhead">Michael Jackson - 2013</h3>
+<p>my <b>most</b> favorite ever since i was in elementary. an american singer, songwriter, dancer, and philanthropist - that fundamentally influenced pop culture.
+<br>
+<br>
+i discovered him through my family (they are mega fans), and instantly fell in love with his WHOLE discography. i personally think he doesn't have ONE bad song.</p>
+            </div>
+            
+            <!--FAVORITE ARTIST-->
+            
+            <div class="content" style="height:auto;">
+                <img src="https://i.pinimg.com/564x/b9/d1/6f/b9d16fc7e4b572cbd599fc9ac4a09edd.jpg">
+                <h3 class="subhead">Björk - 2018</h3>
+<p>an icelandic singer and musician with a very distinct voice and beautiful style in musical choices and style.
+<br>
+<br>
+i discovered her in 2018 mostly through my brother who is a pretty big fan of her. her debut album literally called Debut sparked interest in me when i heard "Venus as a Boy". and not only her music but her public presence.</p>
+            </div>
+            
+            <!--FAVORITE ARTIST-->
+            
+            <div class="content" style="height:auto;">
+                <img src="https://i.pinimg.com/564x/f0/1e/9a/f01e9acbb4277ba72384da91c0c6202c.jpg">
+                <h3 class="subhead">Blur - 2016</h3>
+<p>an english rock band formed in 1988 and helped define the britpop genre.
+<br>
+<br>
+i discovered them through Gorillaz back around 2016, since the lead singer, damon albarn, is the singing vocal for Gorillaz's lead singer 2D. i immediately fell in love with their sound, and how they started to experiment later in their band days.</p>
+            </div>
+            
+            <!--FAVORITE ARTIST-->
+            
+           <div class="content" style="height:auto;">
+                <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/images/2b3e0979f48c5f574eb930a9df1863a6.png">
+                <h3 class="subhead">Queen - 2018</h3>
+<p>an english rock band formed in 1970 and is my most favorite rock 70s bands EVER. even got me more into the classic rock genre.
+<br>
+<br>
+i discovered them through my classic rock fixation around 2018-2019, and started getting attached to their whole discography and history during the Bohemian Rhapsody biopic era.</p>
+            </div>
+            
+            <!--FAVORITE ARTIST-->
+            
+            <div class="content" style="height:auto;">
+                <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/images/05e22497d9647e180e7f8abbfd14f971.png">
+                <h3 class="subhead">Radiohead - 2017</h3>
+<p>an english rock band formed in 1985 that pretty much carried me in middle school i CANNOT thank them enou-
+<br>
+<br>
+i discovered them around my britpop fixation in 2016-2017 i think? i was starting to look into more rock bands (mostly from britain loooool british inavsion) and thats where i found them. a very BIG influence they had on me, to the point where i wanted to start guitar lessons myself! and i think that goes for every rock band i like in this section lol...</p>
+            </div>
+            
+            <!--FAVORITE ARTIST-->
+            
+<div class="content" style="height:auto;">
+                <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/images/224402a79cc4464fe0d94902e45a0683.png">
+                <h3 class="subhead">Gorillaz - 2016</h3>
+<p>an english virtual band formed in 1998 that inspires me artistically and musically.
+<br>
+<br>
+i discovered them sometime around 2016-2018 when i first listened to their track called "DARE" from their second album Demon Days. their music, music videos, and story telling pulled me in HARD and stuck with me since middle school.</p>
+            </div>
+            
+            <!--FAVORITE ARTIST-->
+            
+            <div class="content" style="height:auto;">
+                <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/images/6b7fff2d891f5ca2d08356339601ca85.png">
+                <h3 class="subhead">Incubus - 2018</h3>
+<p>an american rock banded formed in 1991 that I LOVE SO MUCH AAAAAH. one of my most favorite 90's alt bands.
+<br>
+<br>
+i discovered them around 2018 when i listened to their most popular track "Drive" for the first time like any other new fan. i started listening to more to their stuff and found out their music was linked to a genre called "nu-metal". basically they helped me discover what nu-metal was and thats why i love it so much till this day.
+</p>
+            </div>
+            
+            <!--FAVORITE ARTIST-->
+        </div>
+    </div>
+    
+    <!--FAV ARTISTS SECTION END-->
+    
+    <!--COLLECTION SECTION START-->
+    
+    <div id="collect" class="tabcontent" style="display:none;">
+        <h2 class="headings">
+           ☆ my collection
+        </h2>
+        <div class="inner" style="height: 248px;">
+            
+<!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px;">Plastic Beach - Gorillaz
+                                <br>
+                                <br>
+                                vinyl owned since in 2018
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Plasticbeach452.jpg/220px-Plasticbeach452.jpg">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                         <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px;">Off the Wall - Michael Jackson
+                                <br>
+                                <br>
+                                vinyl owned since in 2018
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Off_the_wall.jpg/220px-Off_the_wall.jpg">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                         <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px;">Destiny - The Jacksons
+                                <br>
+                                <br>
+                                vinyl owned since in 2018
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Jacksons-destiny.jpg/220px-Jacksons-destiny.jpg">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                         <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px;">Business as Usual - Men at Work
+                                <br>
+                                <br>
+                                vinyl owned since in 2018
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/8/87/Businessasusual-aus.jpg" >
+                        </div>
+                        <!--ALBUM END-->
+                        
+                          <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px;">Triumph - The Jacksons
+                                <br>
+                                <br>
+                                vinyl owned since in ???
+                                </center>
+                            </div>
+                            <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/images/the_jacksons-triumph_2008-frontal.jpg">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                          <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px;">No Strings Attached - NSYNC
+                                <br>
+                                <br>
+                                cd owned since ???
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a1/Nsync_-_No_Strings_Attached.png/220px-Nsync_-_No_Strings_Attached.png">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                         <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px;">Debut - Björk
+                                <br>
+                                <br>
+                                cd owned since in 2018
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/77/Bj%C3%B6rk-Debut-1993.png/220px-Bj%C3%B6rk-Debut-1993.png">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                         <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> Led Zeppelin II - Led Zeppelin
+                                <br>
+                                <br>
+                                 vinyl owned since 2019
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Led_Zeppelin_-_Led_Zeppelin_II.jpg/220px-Led_Zeppelin_-_Led_Zeppelin_II.jpg">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                        <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> HIStory - Michael Jackson
+                                <br>
+                                <br>
+                                cd owned since 2018
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/MJ-HIStory.jpg/220px-MJ-HIStory.jpg">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                        <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> CrazySexyCool - TLC
+                                <br>
+                                <br>
+                                cd owned since ???
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/TLC_-_CrazySexyCool_album_cover.png/220px-TLC_-_CrazySexyCool_album_cover.png">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                        <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> Justified - Justin Timberlake
+                                <br>
+                                <br>
+                                cd owned since ???
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Justified_-_Justin_Timberlake.png/220px-Justified_-_Justin_Timberlake.png">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                        <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> The Best Of - Blur
+                                <br>
+                                <br>
+                                cd owned since 2018
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Blur_-_The_Best_of_-_cover_art.jpg/220px-Blur_-_The_Best_of_-_cover_art.jpg">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                        <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> The Dark Side of the Moon - Pink Floyd
+                                <br>
+                                <br>
+                                vinyl owned since 2018
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                         <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> Gorillaz - Gorillaz
+                                <br>
+                                <br>
+                                cd owned since 2018
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/GorillazAlbum.jpg/220px-GorillazAlbum.jpg">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                        <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> Oops! I Did It Again - Britney Spears
+                                <br>
+                                <br>
+                                cd owned since ???
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/24/Britney_Spears_-_Oops%21..._I_Did_It_Again.png/220px-Britney_Spears_-_Oops%21..._I_Did_It_Again.png">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                        
+                        
+                        <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> Thriller - Michael Jackson
+                                <br>
+                                <br>
+                                vinyl owned since 2018
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/55/Michael_Jackson_-_Thriller.png/220px-Michael_Jackson_-_Thriller.png">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                        <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> News Of The World - Queen
+                                <br>
+                                <br>
+                                vinyl owned since 2019
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Queen_News_Of_The_World.png/220px-Queen_News_Of_The_World.png">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                        <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> Leisure - Blur
+                                <br>
+                                <br>
+                                cd owned since 2019
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/LeisureUK.jpg/220px-LeisureUK.jpg">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                        <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> Infinity on High - Fall Out Boy
+                                <br>
+                                <br>
+                                vinyl owned since 2021
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Infinityonhigh.jpg/220px-Infinityonhigh.jpg">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                        <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> Enema of State - Blink-182
+                                <br>
+                                <br>
+                                cd owned since 2021
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/Blink-182_-_Enema_of_the_State_cover.jpg">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                        <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> Demon Days - Gorillaz
+                                <br>
+                                <br>
+                                vinyl owned since 2019
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Gorillaz_Demon_Days.PNG/220px-Gorillaz_Demon_Days.PNG">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                         <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> Survivor - Destiny's Child
+                                <br>
+                                <br>
+                                cd owned since ???
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Destiny%27s_Child_%E2%80%93_Survivor.jpg/220px-Destiny%27s_Child_%E2%80%93_Survivor.jpg">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                          <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> Led Zeppelin IV - Led Zeppelin
+                                <br>
+                                <br>
+                                 vinyl owned since 2018
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/26/Led_Zeppelin_-_Led_Zeppelin_IV.jpg/220px-Led_Zeppelin_-_Led_Zeppelin_IV.jpg">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                        <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> The Works - Queen
+                                <br>
+                                <br>
+                                vinyl owned since 2019
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Queen_The_Works.png/220px-Queen_The_Works.png">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                         <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> Dookie - Green Day
+                                <br>
+                                <br>
+                                cd owned since 2018
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Green_Day_-_Dookie_cover.jpg/220px-Green_Day_-_Dookie_cover.jpg">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                         <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> Bad - Michael Jackson
+                                <br>
+                                <br>
+                                vinyl owned since 2018
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Michael_Jackson_-_Bad.png/220px-Michael_Jackson_-_Bad.png">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                         <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> Revolver - The Beatles
+                                <br>
+                                <br>
+                                vinyl owned since 2019
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Revolver_%28album_cover%29.jpg/220px-Revolver_%28album_cover%29.jpg">
+                        </div>
+                        <!--ALBUM END-->
+                        
+                         <!--ALBUM START-->
+                        <div id="album">
+                            <div class="albumtext">
+                                <center style="padding:20px"> Around the Fur - Deftones
+                                <br>
+                                <br>
+                                 cd owned since 2021
+                                </center>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Deftones_-_Around_the_Fur.jpg/220px-Deftones_-_Around_the_Fur.jpg">
+                        </div>
+                        <!--ALBUM END-->
+            
+        </div>
+    </div>
+    
+    <!--COLLECTION SECTION END-->
+    
+    <!--MINILOG SECTION START-->
+    
+    <div id="log" class="tabcontent" style="display:none;">
+        <h2 class="headings">
+           ☆ my minilog
+        </h2>
+        <div class="inner" style="height: 248px;">
+            
+            
+        <p><img src="https://wilardo.crd.co/assets/images/gallery20/3a1abe61.gif?v=ee8a995d"> <b>2/28/2024</b> - idk what the Cocteau Twins did but they put crack in Heaven or Las Vegas idk yall</p>
+            
+            <hr>
+            
+        <p><img src="https://wilardo.crd.co/assets/images/gallery20/3a1abe61.gif?v=ee8a995d"> <b>2/6/2024</b> - ive been getting back into listening to more classic rock recently, and its mostly Queen whos getting the treatment LOL. their album "The Miracle" has reeled me in again, and idc what yall say about the album cover it looks beautiful IDC.</p>
+            
+            <hr>
+            
+            <p><img src="https://wilardo.crd.co/assets/images/gallery20/3a1abe61.gif?v=ee8a995d"> <b>12/26/2023</b> - BEEN A WHILE, but i have been following the status of this one lostwave song for a while, refered to as "<a href="https://www.youtube.com/watch?v=oNWoJKlxxNg&pp=ygUVaG93IGxvbmcgcGF1bGEgdG9sZWRv">How Long</a> or "How Long will It Take" by Paula Toledo. very beautiful song and im so glad it was finally found after 15 YEARS, i even made it the background music for my photos page. i gave Paula's other works a listen and god its good. brings back nostalgia i cant put my finger on.</p>
+            
+            <hr>
+            
+            <p><img src="https://wilardo.crd.co/assets/images/gallery20/3a1abe61.gif?v=ee8a995d"> <b>12/2/2023</b> - started listening to homogenic again by björk and ugh that album is so good, i forget <a href="https://youtu.be/loB0kmz_0MM">Jóga</a> is so beautiful. im gonna be playing the hell out of that song.</p>
+            
+            <hr>
+            
+            <p><img src="https://wilardo.crd.co/assets/images/gallery20/3a1abe61.gif?v=ee8a995d"> <b>11/27/2023</b> - finished my favorite artists and collections tabs! some albums i don't remember when they were originally acquired but its whateva.</p>
+            
+            <hr>
+            
+            <p><img src="https://wilardo.crd.co/assets/images/gallery20/3a1abe61.gif?v=ee8a995d"> <b>11/24/2023</b> - been going on a gorillaz album binge againnn. im convinced plastic beach is actually their best album (as said by jerma). thank the lord i have it as a vinyl.</p>
+        </div>
+    </div>
+    
+    <!--MINILOG SECTION END-->
+    
+</aside>
+
+</div>    
+    
+    
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+      
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    /**
+      Developed by Prashant Shrestha
+      + https://prashant.me
+    */
+    var lastfmData = {
+      baseURL:
+        "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=",
+      // Your Last.fm Username
+      user: "nork2004",
+      // Your API key
+      api_key: "05b46fa7ae471f704951ceceeeee5a67",
+      additional: "&format=json&limit=1"
+    };
+
+    var getSetLastFM = function() {
+      $.ajax({
+        type: "GET",
+        url:
+          lastfmData.baseURL +
+          lastfmData.user +
+          "&api_key=" +
+          lastfmData.api_key +
+          lastfmData.additional,
+        dataType: "json",
+        success: function(resp) {
+          var recentTrack = resp.recenttracks.track[0];
+          var formatted =
+            "<img src='https://i.imgur.com/EgWjJry.png'>" + recentTrack.name;
+          $("a#tracktitle")
+            .html(formatted)
+            .attr("href", recentTrack.url)
+            .attr("title", recentTrack.name + " by " + recentTrack.artist["#text"])
+            .attr("target", "_blank");
+
+          var artistFormatted =
+            "<img src='https://i.imgur.com/fae5XZA.png'>" +
+            recentTrack.artist["#text"];
+          $("a#trackartist")
+            .html(artistFormatted)
+            .attr("title", "Artist : " + recentTrack.artist["#text"]);
+          $("img#trackart").attr("src", recentTrack.image[2]["#text"]);
+        },
+        error: function(resp) {
+          $("a#tracktitle").html(
+            "<img src='https://i.imgur.com/EgWjJry.png'>" + "Silence!"
+          );
+          $("img#trackart").attr("src", "https://i.imgur.com/Q6cCswP.jpg");
+          var artistFormatted =
+            "<img src='https://i.imgur.com/fae5XZA.png'>Prashant Shrestha";
+          $("a#trackartist")
+            .html(artistFormatted)
+            .attr("href", "www.prashant.me/");
+        }
+      });
+    };
+
+    // Get the new one.
+    getSetLastFM();
+    // Start the countdown.
+    setInterval(getSetLastFM, 10 * 1000);
+    </script>
+  
+  </body>
+</html>
