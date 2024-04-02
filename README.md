@@ -4,7 +4,7 @@ this is the repository of my personal [website](https://nork2004.neocities.org/)
 ## about
 nork2004 is a personal website hosted on neocities, created by nork to dump their sillay passions and talent into. all code is hand-made by nork :-)
 - i code using [phcode.dev](https://phcode.dev/) and sometimes [codebeautify.org](https://codebeautify.org/real-time-html-editor#). both for real-time editing
-- site looks better on chrome desktop
+- site looks better on chrome, windows and desktop
 - i used this [deploy to neocities](https://github.com/burned-salmon/deploy-to-neocities-template) guide to upload and show contributions of my site!
 - a queer coded this site
 
