@@ -1,0 +1,880 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://nork2004.neocities.org/styling/scrollbar.css">
+    <title>webmaster</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/x-icon" href="https://wilardo.crd.co/assets/images/gallery27/a3ab850c.gif?v=bca827db"> 
+      
+  
+<style>
+
+
+    ::selection,
+-webkit-::selection {
+  background: teal;
+  color: white;
+  text-shadow: none;
+}
+
+
+    body {
+    display:block;
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:auto;
+    font-family:ms ui gothic;
+    background:black;
+}
+
+    #structure {
+        margin-left:auto;
+        margin-right:auto;
+        width:926px;
+        display:flex;
+        margin-top:33px;
+        margin-bottom:33px;
+        padding:6px;
+        border-radius:0 105px 0 0;
+        border:2px solid #000000;
+        background: linear-gradient(to bottom, rgba(177,216,245,1) 0%,rgba(190,228,248,1) 25%,rgba(200,238,251,1) 46%,rgba(230,248,253,1) 70%,rgba(253,255,255,1) 88%,rgba(225,255,255,1) 88%,rgba(225,255,255,1) 93%,rgba(225,255,255,1) 100%);
+        box-shadow: inset 0px 0px 0px 1px white, 0 0 4px #ffffff;
+        flex-wrap:wrap;
+}
+    
+    .flexbox {
+        display:flex;
+}
+
+    .left {
+}
+
+    .right {
+}
+
+    .header {
+        height:142px;
+        border:2px outset #57635e;
+        padding:5px;
+        margin-bottom:5px;
+        border-radius: 0 101px 0 0;
+        box-shadow:inset 0px 0px 0px 1px white;
+ background:url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/dighjg.png);
+        background-size:cover;
+}
+    
+    .headings {
+            font-family: 'Genos', sans-serif;
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+            font-size: 4.9em;
+         transition: all 0.5s;
+    }
+    
+    .headings:hover {
+    webkit-filter: blur(0.5px);
+filter: blur(2px);
+}
+
+    .container {
+        border:2px outset #57635e;
+        padding:5px;
+        width:650px;
+        background:white;
+        background: linear-gradient(ghostwhite, ghostwhite, lightgray);
+        box-shadow:inset 0px 0px 0px 1px white;    
+        border-radius:0 0 10px 10px;
+}
+
+    .webmaster {
+        border:2px outset #57635e;
+        margin-right:5px;
+        padding:5px;
+        background: linear-gradient(ghostwhite, ghostwhite, #a5abad);
+        box-shadow:inset 0px 0px 0px 1px white;
+        border-radius:10px;
+        height: 460px;
+}
+
+    .pfp {
+        width:240px;
+        border:1px outset #757575;
+        border-radius:5px;     
+}
+
+#name {
+ background: linear-gradient(180deg, rgb(0 117 128 / 70%) 30%, rgb(56 160 170 / 50%) 70%);
+    color: white;
+    border: 1px outset #757575;
+    border-radius: 5px;
+    margin: 0px;
+    margin-top:3px;
+    box-shadow: inset 0px 0px 0px 1px white, inset 1px 1px 5px white, inset -1px -1px 1px white, inset -1px 1px 5px white, inset 0 -1px 0.5px white;
+    text-align: center;
+    text-shadow: 1px 1px rgb(0 0 0/30%);
+    padding:2px;
+    }
+    
+    
+    #info {
+        border:1px outset #757575;
+        padding:5px;
+        margin-bottom:5px;
+        border-radius:5px;
+        background:#ffffff;
+        width:231px;
+        box-shadow: inset 1px 1px white, inset -1px -1px white;
+        background: linear-gradient(white 50%, #ceded8 70%);
+        margin-top:5px;
+        font-size:14px;
+        color: #3d3d3d;
+        text-align:center;
+        height: 164px;
+        overflow: auto;
+}
+    
+    
+    .about {
+        border:1px outset #757575;
+        box-shadow: inset 1px 1px white, inset -1px -1px white;
+        background: linear-gradient(white 50%, #ceded8 70%);
+        padding:5px;
+        border-radius:0 0 5px 5px;
+        height:240px;
+    }
+
+    .about-inner {
+        border:1px solid black;
+        background:linear-gradient(0deg, black, grey);
+        padding:5px;
+        box-shadow:0px 0px 0px 1px white inset;
+        color:white;
+        text-shadow: 0px 0px 2px black;
+        border-radius: 5px;
+        height:228px;
+        overflow:auto;
+        
+}
+    
+    .tabhead {
+        border: 1px outset #757575;
+        padding:5px;
+        border-bottom:0px;
+        height:21px;
+        background: linear-gradient(180deg, rgb(0 117 128 / 70%) 30%, rgb(56 160 170 / 50%) 70%), url(/bg/screen.jpg);
+        color:white;
+        box-shadow: inset 0px 0px 0px 1px white, inset 1px 1px 5px white, inset -1px -1px 1px white, inset -1px 1px 5px white, inset 0 -1px 0.5px white;
+        border-radius: 5px 5px 0 0;
+        text-shadow: 1px 1px rgb(0 0 0/30%);
+        font-style:italic;
+}
+    
+    .tabhead button{
+        background:linear-gradient(white 30%, rgba(225,235,255,1), rgb(221 244 255), lightgray);
+        border:1px solid #757575;
+        border-radius:5px;
+        padding:3px;
+        width:25px;
+        color: #3d3d3d;
+        text-shadow: 1px 1px rgb(0 0 0/30%);
+    }
+    
+    .tabhead button:hover{
+          background: white;
+  background-blend-mode: screen;
+  -webkit-background-blend-mode: screen;
+        color:teal;
+        cursor:pointer;
+    }
+    
+    .tabhead button:active{
+          background: linear-gradient(white 30%, rgba(225,235,255,1), rgb(221 244 255), lightgray);
+  background-blend-mode: screen;
+  -webkit-background-blend-mode: screen;
+        color: #3d3d3d;
+    }
+    
+    .headings2 {
+        border:1px solid grey;
+        padding:3px;
+        box-shadow: inset 0px 0px 0px 1px white, inset 1px 1px 5px white, inset -1px -1px 1px white, inset -1px 1px 5px white, inset 0 -1px 0.5px white;
+        text-align: left;
+        text-shadow: 1px 1px rgb(0 0 0/30%);
+        background: linear-gradient(180deg, rgb(0 117 128 / 70%) 30%, rgb(56 160 170 / 50%) 70%);
+        width:170px;
+        border-radius:0 10px 0 10px;
+        margin:0px;
+        margin-bottom:5px;
+        font-style:italic;
+        font-size:1em;
+}
+
+    
+    .blinkies {
+        border:1px outset grey;
+        padding:2px;
+        border-radius:5px;
+        margin-top:5px;
+        background:white;
+
+    }
+    
+    .extra {
+        border:1px outset #757575;
+        box-shadow: inset 1px 1px white, inset -1px -1px white;
+        background: linear-gradient(white 50%, #ceded8 70%);
+        padding:5px;
+        border-radius:0 0 5px 5px;
+        height:234px;
+        width:394px;
+        overflow:auto;
+}
+    
+    .extra-inner {
+        border:1px solid black;
+        background:linear-gradient(0deg, black, grey);
+        padding:5px;
+        height:166px;
+        box-shadow:0px 0px 0px 1px white inset;
+        color:white;
+        text-shadow: 0px 0px 2px black;
+        border-radius: 0 5px 5px 5px;
+        overflow:auto;
+        text-align:center;
+        font-size:14px;
+}
+    
+    #list {
+    text-align: center;
+    display: block;
+
+}
+
+#list p {
+    width: 49%;
+    display: inline-block;
+    text-align: left;
+    margin:0px;
+}
+    
+    .extra hr {
+        border:1px dotted white;
+        border-bottom:none;
+    }
+
+    .headings3 {
+        margin:0px;
+        border:1px outset black;
+        width:150px;
+        padding:2px;
+        border-bottom:none;
+        border-radius:5px 50px 0 0;
+        background: linear-gradient(180deg, rgb(0 117 128 / 70%) 30%, rgb(56 160 170 / 50%) 70%);
+        box-shadow: inset 0px 0px 0px 1px white, inset 1px 1px 5px white, inset -1px -1px 1px white, inset -1px 1px 5px white, inset 0 -1px 0.5px white;
+        text-shadow: 1px 1px rgb(0 0 0/30%);
+        color:white;
+        font-style:italic;
+}
+
+.babygirl {
+    border: 1px solid black;
+    padding: 5px;
+    background: white;
+    border-radius: 5px;
+    border: 1px outset gray;
+    overflow-y:scroll;
+    height:223px;
+}
+    
+    .babygirl img{
+        width:100px;
+        border:1px solid black;
+}
+    
+    .fanlistings {
+        border:2px outset #57635e;
+        margin-right:5px;
+        padding:5px;
+        background: linear-gradient(ghostwhite, ghostwhite, #a5abad);
+        box-shadow:inset 0px 0px 0px 1px white;
+        border-radius:10px;
+        margin-top:5px;
+}
+    
+      .fanlist-inner {
+         border:1px outset #757575;
+        box-shadow: inset 1px 1px white, inset -1px -1px white;
+        background: linear-gradient(white 50%, #ceded8 70%);
+        padding:5px;
+        border-radius:0 0 5px 5px;
+        height:236px;
+          overflow:auto;
+          width:231px;
+          text-align:center;
+       
+}
+    
+    .fanlistings img {
+        filter: grayscale(100%);
+        transition: all 0.5s;
+    }
+    
+    .fanlistings img:hover {
+        filter:none;
+        position: relative;
+    transform: translate(0px, -5px);
+    }
+    
+    
+    .links {
+    color: white;
+    background: linear-gradient(teal, lightblue);
+    padding: 3px;
+    font-size: 11px;
+    margin-top: 5px;
+    border: 2px outset #57635e;
+    font-size: 16px;
+    text-align: center;
+    width:916px;
+    border-radius:5px;
+        box-shadow:inset 0px 0px 0px 1px white;
+}
+    
+    .links p {
+    background: linear-gradient(ghostwhite, ghostwhite, #a5abad);
+    padding: 3px;
+    margin: 0px;
+        border:1px outset #757575;
+        border-radius:5px;
+}
+    
+    .links a {
+      color: #3d3d3d;
+        text-decoration:none;
+}
+    
+    .links a:hover{
+        color:rgb(0 117 128 / 70%);
+    }
+
+audio {
+    width: 206px;
+    height: 30px;
+    background: white;
+    filter: invert(1) contrast(2);
+    border: 1px solid gray;
+    margin-top: 7px;
+    border-radius:5px;
+}
+
+    .player {
+    width: 205px;
+    color: black;
+    z-index: 10;
+    position: fixed;
+    bottom: 4px;
+    left: 5px;
+    font-weight: bold;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+    
+    .home {
+    color: black;
+    z-index: 10;
+    position: fixed;
+    font-weight: bold;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    top: 4px;
+    left: 5px;
+}
+    
+    .home a {
+        text-decoration: none;
+        color:black;
+}
+    
+    .home a:hover {
+        font-style:italic;
+}
+
+</style>
+
+<!--TOOLTIP-->
+
+<style>
+#s-m-t-tooltip{
+	/* basic */
+	max-width: 300px;
+	z-index: 10;
+	margin: 24px 14px 7px 12px;
+	/* style and design */
+	padding:8px;
+	border-radius:3px;
+    background: black;
+border: 1px solid grey;
+	color: white;
+font-family: ms ui gothic;
+font-size:13px;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+<script>
+							(function($){
+							$(document).ready(function(){
+							$("[title]").style_my_tooltips({
+							tip_follows_cursor: true,
+							tip_delay_time:100,
+							tip_fade_speed:300,
+							attribute:"title"
+							});
+							});
+							})(jQuery);
+</script>
+
+  </head>
+  <body>
+
+<div id="structure">
+
+<aside class="left">
+    
+    <div class="webmaster">
+        
+        <img title="steven 'specs' fisher from insidious. me fr" class="pfp" src="https://i.pinimg.com/736x/24/bd/71/24bd7162cf2e0d91dd095213782857f8.jpg">
+        <h2 id="name">nork2004</h2>
+
+        
+        <div id="info">
+<p><b>nork</b> any/all 19 black audhd</p>
+            <img src="https://i.imgur.com/pZJYyk4.png"> <img src="https://i.imgur.com/tn0RSo5.png">
+            <img src="https://i.imgur.com/hh5n4WA.png"> <img src="https://i.imgur.com/ypcKWM0.png">
+            
+            <hr>
+            
+<div style="text-align:left">
+            <p style="margin:0px; border-bottom:dotted 1px grey;"><b>info:</b> gemini, june 18</p>
+            <p style="margin:0px; border-bottom:dotted 1px grey;"><b>passions:</b> digital art, music/studying instruments, web design/coding, and a whole lotta horror.</p>
+    <p style="margin:0px;"><b>type:</b> INTP-A 5w6 choleric sx/sp</p>
+</div>
+        </div>
+    
+    </div>
+    
+    <div class="fanlistings">
+        
+        <div class="tabhead" style="margin-top:5px;"><span style="font-size:19px; font-weight:bold;">fanlist.txt</span> <div style="float:right;"><button>_</button> <button>+</button> <button>x</button></div></div>
+        
+        <div class="fanlist-inner">
+        
+        <a href="https://powerup.i-heart-you.net/n64/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/n64-50x50_03.gif" alt="n64"></a>
+               
+               <a href="https://hanabi.nu/ps2/about.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/ps250x501.png" alt="ps2"></a>
+               
+               <a href="http://heather.prisonic-fairytale.com/heather.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/heather-50x503.jpg" alt="heather"></a>
+               
+               <a href="https://fanacular.net/jigsaw/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/50x50_21.jpg" alt="saw series"></a>
+               
+               <a href="https://amanda.one-kiss.net/music/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/50x50_3.png" alt="music"></a>
+               
+               <a href="https://auridon.com/falloutboy/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/50-a.png" alt="falloutboy"></a>
+               
+               <a href="http://jigsaw.tanfana.net/about.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/jigsaw_jessica_50x50.gif" alt="jigsaw"></a>
+               
+               
+               <a href="https://fan.enamour.nu/deathnote/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/ba93dbe0287a7d_50x50_2.png" alt="deathnote"></a>
+               
+               <a href="https://fanacular.net/hoffman/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/hoffman_50_1.png" alt="hoffman"></a>
+               
+               <a href="http://daria.ravenbeauty.net/about.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/daria50x50_4.png" alt="daria"></a>
+               
+               <a href="https://www.purifiedfiction.com/mychemicalromance/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/50x50-9.gif" alt="mcr"> </a>
+               
+               <a href="https://fanique.altervista.org/emoticons/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/50x50_4.png" alt="emoticons :P"></a>
+               
+               <a href="https://www.ladyrose.buruma.net/greenday/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/50x50_2.1403380696.jpg" alt="greenday"></a>
+               
+               <a href="https://gina.fanacular.net/scream/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/50x50_1.png" alt="scream"></a>
+               
+               <a href="https://herotovillain.com/rock/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/essi5050(2).gif" alt="rock music"></a>
+               
+               <a href="https://sarennia.net/horror/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/h50x50x01_andi.png" alt="horror"></a>
+               
+               <a href="https://bjork.allneonlike.org/bjork.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/bjork50x50-01.jpg" alt="bjork"></a>
+               
+               <a href="https://nessa.fanlistings.net/drive/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/driveashley50x50-1.jpg" alt="drive incubus"></a>
+               
+               <a href="https://www.enchanted-rose.org/island/about.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/5050_005.gif" alt="tdi"></a>
+               
+               <a href="https://www.ladyrose.buruma.net/gamecube/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/NintendoGameCube50x50-2.png" alt="gamecube"></a>
+               
+               <a href="https://www.ladyrose.buruma.net/tl/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/tl-50x50-2.png" alt="tomodachilife"></a>
+               
+               <a href="https://imaginary.nu/series/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/code-50x50-sh-1-1.png" alt="silent hill"></a>
+               
+               <a href="https://hanabi.nu/sonic/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/sonic505021.png" alt="sonic"></a>
+               
+               <a href="https://www.ladyrose.buruma.net/3ds/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/image.1437218634.jpg" alt="3ds"></a>
+               
+               <a href="https://162candles.com/fnaf/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/fnaf_codes_50x50_008.png" alt="fnaf movie"></a>
+               
+               <a href="https://silent.am/donniedarko/about.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/darko50501.png" alt="donnie darko"></a>
+               
+               <a href="https://decembergirl.net/xfiles/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/xf50x50_8.png" alt="xfiles"></a>
+               
+               <a href="https://web.archive.org/web/20090106012302/http://truedestinies.com/leigh/about.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/leigh50-3.gif" alt="leigh whannel"></a>
+               
+               <br>
+               
+               <a href="https://www.ladyrose.buruma.net/gorillaz/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/gorillaz100x50-3.png" alt="gorillaz"></a>
+               
+               <a href="https://www.boundless-realms.com/invaderzim/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/zimfan100x5002.png" alt="invader zim"></a>
+               
+               <a href="https://www.ladyrose.buruma.net/jlp/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/jagged-100x50-1.jpg" alt="jagged little pill"></a>
+               
+               <a href="https://www.ladyrose.buruma.net/korn/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/100x50x01.png" alt="korn"></a>
+               
+               <a href="https://www.ladyrose.buruma.net/mj/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/mj-100x50-1.png" alt="mj"></a>
+               
+               <a href="https://herotovillain.com/slasher/index.php"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/100x50_1.png" alt="slashers"></a>
+               
+               <a href="https://tfl.hakumei.org/incubus/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/100x50-4.jpg" alt="incubus"></a>
+               
+               <a href="https://yerfej.org/queen/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/fanlistings/queen100x50-024146.png" alt="queen"></a>
+            
+        </div>
+    
+    
+    </div>
+    
+    </aside>
+
+
+<aside class="right">
+    
+    <div class="header">
+        
+        <h1 class="headings">webmaster</h1>
+    
+    </div>
+
+    <div class="container">
+
+<div class="tabhead"><span style="font-size:19px; font-weight:bold;">about.exe</span> <div style="float:right;"><button>_</button> <button>+</button> <button>x</button></div></div>
+
+        <div class="about">
+            
+            <div class="about-inner">
+            
+                        <h2 class="headings2" style="border:outset black 1px">☆ about me</h2>
+<img src="https://i.pinimg.com/736x/8c/1d/9b/8c1d9bc817fb86277556eab9987aa783.jpg" width="100" style="float:left; border:1px solid black; margin-right:5px;">
+<p><b>hello.</b> i go by nork, a strange individual on the web. im a bit bad at explaining myself but i hope you dont mind.</p>
+            <p>im a black 19 year old autistic adhd combo queer transmasc who uses any pronoun you can think of. i guess you can say im a bit of an ambivert? i like to be kept to myself sometimes, left alone to my own devices, but very talkative when the opportunity presents itself. im loud, dopey, a slight hot head (i can control it. kind of) but i am totally normal. </p>
+                
+                <p>i have other hobbies, such as drawing, learning instruments, and exploring the wide web. i have a BIG attachment for horror and have a slight morbid curiosity, almost watching/playing any horror media out there available for me and indulging myself in disturbing mysteries. my strongest media connections is and always saw, silent hill and the five nights at freddy's franchise. all three means <b>a lot</b> to me.</p>
+                
+<h2 class="headings2" style="border:outset black 1px">☆ about site</h2>
+<img src="https://i.pinimg.com/736x/16/aa/c0/16aac0b38ee4b5c0f42d3c7be056a784.jpg" width="100" style="float:left; border:1px solid black; margin-right:5px;">
+                <p>ive been coding for about 3 years by now. during the pandemic, i was bored out of my mind, rotting away in my room while the days went by. out of that bordom, i discovered coding languages. my first coding language was LUA, a big start to coding for me, but it was soley for making games on roblox when i was in my prime roblox fixation. after that fixation slowed down, i went to HTML and CSS sometime around 2022, making profile themes on spacehey. i mostly developed skills through tweaking with F2U templates, like taking a toy apart and putting it back together.</p>
+                
+                <p>with too much time on my hands, i made nork.neocities.org. a site that was red emo themed, but started to shift around a lot due to my indecisiveness. it was a bit messy trying to find what was "me", until i scrapped nork.neocities.org and made the one i currently have now.</p>
+                
+            </div>
+            
+        </div>
+
+<marquee behavior="alternate" class="blinkies"><img src="https://wilardo.crd.co/assets/images/gallery25/326db23f.gif?v=b62e9456">
+<img src="https://wilardo.crd.co/assets/images/gallery09/c29b9208.gif?v=b62e9456">
+<img src="https://wilardo.crd.co/assets/images/gallery19/8b69f286.gif?v=b62e9456">
+<img src="https://wilardo.crd.co/assets/images/gallery12/dfb9aded_original.gif?v=b62e9456">
+   <img src="https://file.garden/ZAkEYVkUN2HXHCu3/resources/blinkies/music/raduiohead.gif">
+<img src="https://wilardo.crd.co/assets/images/gallery09/c1f06d59.gif?v=b62e9456">
+ 
+<img src="https://wilardo.crd.co/assets/images/gallery26/93683370.gif?v=b62e9456">
+    <img src="https://wilardo.crd.co/assets/images/gallery26/193f0f9e.gif?v=b62e9456">
+<img src="https://wilardo.crd.co/assets/images/gallery26/fed97a6f.gif?v=b62e9456">
+<img src="https://wilardo.crd.co/assets/images/gallery26/a043e659.gif?v=b62e9456">
+    <img src="https://wilardo.crd.co/assets/images/gallery12/0ec77e71.gif?v=b62e9456">
+    <img src="https://wilardo.crd.co/assets/images/gallery01/e71d3b0f_original.gif?v=b62e9456">
+    
+</marquee>
+        
+<div class="flexbox">
+    
+    <aside class="left">
+
+<p>↓ the "me if you even care" comp</p>
+        
+<div class="babygirl">
+    <img src="https://i.pinimg.com/564x/e7/5b/d1/e75bd15a04bac0e55f222f9e177ec0f2.jpg">
+    <img src="https://i.pinimg.com/564x/2e/6a/e0/2e6ae07a9d022924ee7bdc51fc0be681.jpg">
+    <img src="https://i.pinimg.com/originals/57/1f/d4/571fd4a4ba2d2e8cc1cf992a68727b9b.gif">
+    <img src="https://i.pinimg.com/736x/95/5f/21/955f21ffcff3cc250165c941a92cd599.jpg">
+    <img src="https://i.pinimg.com/736x/22/cf/38/22cf38c2c84c7b2f15a0c69ee177d63a.jpg">
+    <img src="https://i.pinimg.com/originals/d5/97/4a/d5974ac36730641eff05d317d50843ae.gif">
+    <img src="https://i.pinimg.com/736x/4a/d2/94/4ad294cbc548ca6f5dd7e7a5e4770812.jpg">
+    <img src="https://i.pinimg.com/564x/11/4b/57/114b5756cceca923e146e880c5928be2.jpg">
+    <img src="https://i.pinimg.com/564x/15/8d/6b/158d6b69dce702a9f19a4b601fc5fb48.jpg">
+    <img src="https://i.pinimg.com/564x/d1/09/c0/d109c0836d02b6af7db25b7d23b51f7c.jpg">
+    
+</div>
+
+    </aside>
+    
+    
+    <aside class="right" style="margin-left:5px;">
+    
+<div class="tabhead" style="margin-top:5px;"><span style="font-size:19px; font-weight:bold;">extra.exe</span> <div style="float:right;"><button>_</button> <button>+</button> <button>x</button></div></div>
+
+<div class="extra">
+    
+    
+    <h3 class="headings3">☆ music</h3>
+    <div class="extra-inner">
+    <h5 style="margin:3px;text-align:center">favorite albums:</h5>
+        <img style="border:1px solid black" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/af/Bj%C3%B6rk_-_Homogenic.png/220px-Bj%C3%B6rk_-_Homogenic.png" width="50px" title="Björk - Homogenic">
+        <img style="border:1px solid black" src="https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Cover_art_for_Abandoned_Pools%27_2001_%22Humanistic%22_album.jpg/220px-Cover_art_for_Abandoned_Pools%27_2001_%22Humanistic%22_album.jpg" width="50px" title="Abandoned Pools - Humanistic">
+        <img style="border:1px solid black" src="https://upload.wikimedia.org/wikipedia/en/2/22/LeisureUK.jpg" width="50px" title="Leisure - Blur">
+        <img style="border:1px solid black" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Katebushneverforever.png/220px-Katebushneverforever.png" width="50px" title="Never for Ever - Kate Bush">
+        <img style="border:1px solid black" src="https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Inrainbowscover.png/220px-Inrainbowscover.png" width="50px" title="In Rainbows - Radiohead">
+        <img style="border:1px solid black" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/MJ-HIStory.jpg/220px-MJ-HIStory.jpg" width="50px" title="HIStory: Past, Present and Future, Book I - Michael Jackson">
+
+<hr>
+
+<span id="list">
+        
+    <p>☆ björk</p>
+    <p>☆ blur</p>
+    <p>☆ michael jackson</p>
+    <p>☆ incubus</p>
+    <p>☆ radiohead</p>
+    <p>☆ queen</p>
+    <p>☆ aphex twin</p>
+    <p>☆ fall out boy</p>
+    <p>☆ abandoned pools</p>
+    <p>☆ the beatles</p>
+    <p>☆ kate bush</p>
+    <p>☆ korn</p>
+    <p>☆ gorillaz</p>
+    <p>☆ green day</p>
+    <p>☆ tlc</p>
+    <p>☆ lush</p>
+    <p>☆ cocteau twins</p>
+    <p>☆ alanis morrisette</p>
+    <p>☆ paul mccartney</p>
+    <p>☆ machine girl</p>
+    <p>☆ frou frou</p>
+    <p>☆ the cranberries</p>
+
+        
+        </span>
+
+<hr>
+
+<h5 style="margin:3px;text-align:center">genres:</h5>
+        
+<div id="list">
+    <p>☆ classic rock</p>
+    <p>☆ metal</p>
+    <p>☆ nu-metal</p>
+    <p>☆ r&m</p>
+    <p>☆ soft-rock</p>
+    <p>☆ shoegaze</p>
+    <p>☆ disco</p>
+    <p>☆ pop punk</p>
+    <p>☆ emo</p>
+    <p>☆ midwest emo</p>
+    <p>☆ britpop</p>
+    <p>☆ grunge</p>
+    <p>☆ indie</p>
+    <p>☆ synth pop</p>
+    <p>☆ citypop</p>
+    <p>☆ kpop</p>
+    <p>☆ jpop</p>
+    <p>☆ internet/breakcore</p>
+    <p>☆ vaporwave</p>
+    <p>☆ lostwave</p>
+  </div>
+    
+    </div>
+
+<h3 class="headings3" style="margin-top:5px;">☆ movies/tv</h3>
+    <div class="extra-inner">
+        
+        <h5 style="margin:3px;text-align:center">animated:</h5>
+
+<div id="list">
+        
+    
+    <p>☆ clone high</p>
+    <p>☆ daria</p>
+    <p>☆ 6teen</p>
+    <p>☆ regular show</p>
+    <p>☆ metalocalypse</p>
+    <p>☆ total drama</p>
+        </div>
+
+<hr>
+
+
+        
+        <h5 style="margin:3px;text-align:center">movies:</h5>
+
+<div id="list">
+    
+    <p>☆ saw</p>
+    <p>☆ donnie darko</p>
+    <p>☆ scream</p>
+    <p>☆ fight club</p>
+    <p>☆ evil dead</p>
+    <p>☆ reanimator + the bride of</p>
+    <p>☆ school of rock</p>
+    <p>☆ halloween</p>
+        
+        </div>
+
+<hr>
+        
+        <h5 style="margin:3px;text-align:center">series:</h5>
+        
+    <div id="list">
+    
+    <p>☆ slenderverse</p>
+    <p>☆ trailer park boys</p>
+    <p>☆ ash vs evil dead</p>
+    <p>☆ breaking bad</p>
+    <p>☆ better call saul</p>
+    <p>☆ madness combat</p>
+    <p>☆ x-files</p>
+    <p>☆ walten files</p>
+        
+        </div>
+        
+ <hr>
+        
+        <h5 style="margin:3px;text-align:center">genres/topics:</h5>
+        
+    <div id="list">
+    
+    <p>☆ horror</p>
+    <p>☆ thriller</p>
+    <p>☆ slasher</p>
+    <p>☆ analog horror</p>
+    <p>☆ found footage</p>
+    <p>☆ psychological</p>
+    <p>☆ sci-fi</p>
+    <p>☆ paranormal</p>
+    <p>☆ documentaries</p>
+    <p>☆ biopics</p>
+    <p>☆ animation</p>
+    <p>☆ comedy</p>
+    <p>☆ stop motion</p>
+    <p>☆ digital horror</p>
+    <p>☆ old web</p>
+    <p>☆ icebergs</p>
+        
+        </div>
+    
+    
+    </div>
+
+
+<h3 class="headings3" style="margin-top:5px;">☆ games</h3>
+    <div class="extra-inner">
+
+<h5 style="margin:3px;text-align:center">games:</h5>
+    
+        <div id="list">
+
+
+   <p>☆ five nights at freddy's</p>
+    <p>☆ silent hill</p>
+    <p>☆ resident evil</p>
+    <p>☆ postal</p>
+    <p>☆ sonic</p>
+    <p>☆ metal gear solid</p>
+    <p>☆ mortal kombat</p>
+    <p>☆ 8:11 game</p>
+    <p>☆ touhou</p>
+    <p>☆ off</p>
+
+
+  </div>
+
+<hr>
+        
+        <h5 style="margin:3px;text-align:center">genres:</h5>
+
+        <div id="list">
+
+
+   <p>☆ horror</p>
+    <p>☆ rpgmaker</p>
+    <p>☆ visual novel</p>
+    <p>☆ fighting</p>
+    <p>☆ action</p>
+    <p>☆ sci-fi</p>
+    <p>☆ mmos</p>
+    <p>☆ survival</p>
+
+
+  </div>
+        
+    </div>
+</div>
+        
+        
+
+    
+    </aside>
+
+
+</div>
+
+</div>
+
+    </aside>
+    
+    <div class="links">
+    
+        <p> <img src="https://i.imgur.com/yFuHQxA.gif" width="15">
+                        
+                        <a href="https://nork2004.tumblr.com/"><span>tumblr</span></a> -
+                        <a href="https://toyhou.se/nork2004"><span>toyhouse</span></a> -
+                        <a href="https://www.pinterest.com/nork2004/"><span>pinterest</span></a>
+                         -
+                        <a href="https://open.spotify.com/user/hkxzcq58pkei4iv2tmy09hvai"><span>spotify</span></a> -
+                        <a href="https://www.last.fm/user/nork2004"><span>lastfm</span></a> -
+                        <a href="https://letterboxd.com/nork2004/"><span>letterboxd</span></a> -
+                        <a href="https://spacehey.com/nork"><span>spacehey</span></a>
+                         
+     <img src="https://i.imgur.com/yFuHQxA.gif" width="15"> </p>
+    
+    </div>
+
+</div>
+
+<div class="player">
+    <div style="display:flex;">
+        <img src="https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/196e7c93.gif" style="margin-right:10px"> <marquee>cocteau twins - fifty-fifty clown</marquee>
+        </div>
+<audio controls="" autoplay="">
+                     <source src="https://file.garden/ZAkEYVkUN2HXHCu3/mp3/Cocteau%20Twins%20-%20Fifty-fifty%20Clown.mp3" type="audio/mpeg">
+                     
+                     </audio>
+</div>
+
+<span class="home"><a href="https://nork2004.neocities.org/main">home</a></span>
+
+
+  </body>
+</html>
