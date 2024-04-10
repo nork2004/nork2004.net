@@ -11,8 +11,48 @@
 <link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
 
 <link rel="icon" type="image/x-icon" href="https://wilardo.crd.co/assets/images/gallery04/95718630_original.gif?v=bca827db"> 
+
+    <style>
+.lines {
+position: fixed;
+left: 0;
+top: 0;
+width: 100vw;
+height: 100vh;
+pointer-events: none;
+z-index: 300;
+opacity: 0.05;
+}
+ 
+.lines:before {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+pointer-events: none;
+background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+background-size: 100% 4px;
+will-change: background, background-size; animation: scanlines 0.2s linear infinite;
+}
+ 
+@keyframes scanlines {
+from {
+background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .5) 51%); background-size: 100% 4px; }
+to {
+background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
+background-size: 100% 4px;
+}
+}
+@media only screen and (max-width: 600px);
+{
+</style>
+    
   </head>
   <body>
+
+     <div class="lines"></div>
       
       <!-- LAYOUT START -->
       <div class="structure">
