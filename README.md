@@ -1,5 +1,5 @@
  # ![](https://caterpie.crd.co/assets/images/gallery38/a2df313f.gif?v=ce36ac9f) NORK2004.NET
-this is the repository of my personal [website](https://nork2004.neocities.org/), nork2004 ![]([https://supplies.ju.mp/assets/images/tiny1/e7d07084.gif?v=6a50b904](https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/computer4.gif))
+this is the repository of my personal [website](https://nork2004.neocities.org/), nork2004 ![](https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/computer4.gif)
 
 ## about
 nork2004 is a personal website hosted on neocities, created by nork to dump their sillay passions and talent into. all code is hand-made by nork :-)
