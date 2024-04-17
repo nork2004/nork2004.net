@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>nork2004 feed</title>
+  <link>https://nork2004.neocities.org/</link>
+  <description>i feel so old using this stuff man</description>
+  <language>en-us</language>
+  
+  <item>
+    <title>RSS TEST</title>
+	<pubDate>Tue, 16 Apr 2024 6:04 AM MST</pubDate>
+    <link>https://nork2004.neocities.org/subpages/updates.html</link>
+	<guid>https://nork2004.neocities.org/subpages/updates.html</guid>
+    <description>little test but woo! i learned something</description>
+  </item>
+  
+</channel>
+
+</rss>
