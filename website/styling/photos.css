@@ -1,0 +1,263 @@
+body {
+    display:block;
+    font-family:"ms ui gothic"; background:linear-gradient(to top, black, transparent), url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/4526309940_8c173d269c_k.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    font-size:15px;
+}
+
+::selection {
+    background:greenyellow;
+    color:black;
+    text-shadow:0px 2px 1px rgba(0, 0, 0, 0.47);
+}
+
+/* TWEAKINGS */
+h1 {
+    margin:0px;
+    margin-left:25px;
+    font-family: 'Genos', sans-serif;
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0 3px #000;
+    font-size: 3em;
+    webkit-background-clip: text;
+    transition: all 0.5s;
+}
+
+h1:hover {
+    webkit-filter: blur(0.5px);
+    filter: blur(2px);
+}
+
+h2 {
+    margin:0px;
+    border:1px solid #336927;
+    padding:2px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(230, 240, 163, 1) 0%, rgba(210, 230, 56, 1) 50%, rgba(195, 216, 37, 1) 51%, rgba(219, 240, 67, 1) 100%);
+    margin-bottom:10px;
+    box-shadow: 0px 0px 1px 1px #ffffff inset, 2px 2px 0px 1px rgba(51, 105, 39, 0.59);
+    text-shadow: 1px 1px rgb(255 255 255/70%);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+/* LAYOUT */
+.structure {
+    width:fit-content;
+    margin:auto;
+    margin-top:11em;
+    
+}
+
+/* PHOTO SECTION */
+.photos-wrapper {
+    width:400px;
+    z-index: 6;
+    position: relative;
+    
+}
+
+.camera {
+    width:485px;
+    position: relative;
+    filter:drop-shadow(0px 0px 3px black);
+    transform: ;
+}
+
+.photo-box {
+    border:3px inset grey;
+    position: absolute;
+    z-index: 5;
+    width:306px;
+    height:230px;
+    border-radius:8px;
+    transform: translate(35px, -262px);
+    background-image: url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/screeen.png), url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/clo.jpeg);
+    background-blend-mode: multiply;
+    background-size:auto, cover;
+    font-weight: bold;
+    overflow:hidden;
+}
+
+.top {
+    border-bottom:1px solid #336927;
+    padding:2px;
+    display:flex;
+   justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(230, 240, 163, 1) 0%, rgba(210, 230, 56, 1) 50%, rgba(195, 216, 37, 1) 51%, rgba(219, 240, 67, 1) 100%);
+    box-shadow: 0px 0px 1px 1px #ffffff inset, 2px 2px 0px 1px rgba(51, 105, 39, 0.59);
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+     color:white;
+    position:relative;
+}
+
+.photos-frame {
+    border:none;
+    height:210px;
+    width:306px;
+}
+
+.blink {
+    animation:blinking infinite 1s;
+}
+
+@keyframes blinking {
+    0%,50% {opacity: 100%;}
+    51%,100% {opacity: 0%}
+    
+}
+
+.sidebar {
+    border:2px solid black;
+    padding:5px;
+    background:url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/dotty.gif);
+    border-radius:10px 0 0 10px;
+}
+
+.sidebar-wrapper {
+    z-index: 5;
+    position: absolute;
+    transform: translate(-189px,-241px);
+}
+
+.inner {
+    border:1px solid black;
+    padding:5px;
+    padding-right:10px;
+    border-radius:5px;
+    background: linear-gradient(45deg, #ff9e39, #ffe455);
+    box-shadow:0px 0px 0px 1px inset white;
+}
+
+summary {
+    border:1px solid black;
+    padding:5px;
+    border-radius:10px;
+    width:150px;
+    list-style: none;
+    box-shadow:0px 0px 0px 1px white inset, 0px -2px 4px 3px inset rgba(21, 62, 143, 0.46), 0px 3px 4px 1px white inset, 0px 0px 2px 1px rgba(0, 0, 0, 0.27);
+   background-image: url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/screeen.png), url(https://file.garden/ZAkEYVkUN2HXHCu3/web/images/clo.jpeg);
+    background-blend-mode: multiply;
+    text-shadow: 1.5px 1.5px rgb(255 255 255/60%), -1.5px -1.5px rgb(0 0 0/20%);
+    display:flex;
+    gap:5px;
+    font-weight: bold;
+}
+
+details {
+    margin-bottom:5px;
+}
+
+ul {
+    padding-left:3px;
+    list-style: none;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+summary:active {
+   border:1px solid blue; 
+}
+
+.desc {
+    border:1px solid black;
+    border-radius:0 0 5px 5px;
+    padding:2px;
+    width:141px;
+    margin:auto;
+    border-top:none;
+    background:#bef1ff;
+    text-shadow: 1px 1px rgb(255 255 255/70%);
+}
+
+.desc a {
+    color:blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.desc a:before {
+    content:url(https://file.garden/ZAkEYVkUN2HXHCu3/web/graphics/cirlclc.gif);
+    margin-right:5px;
+}
+
+/* FLOATERS */
+.floater1 {
+    position: absolute;
+    width:340px;
+    transform: translate(-30px, -374px) rotate(-5deg);
+    z-index: 1;
+}
+
+.floater2 {
+    width:227px;
+    position: absolute;
+    transform: translate(262px,-140px);
+    z-index: 2;
+}
+
+.floater3 {
+    position: absolute;
+    width:100px;
+    z-index: 3;
+    transform: translate(253px, -21px);
+    filter: drop-shadow(0px 0px 2px black)
+}
+
+.floater4 {
+    position: absolute;
+    transform: translate(367px,-270px) rotate(-14deg);
+    z-index: 4;
+    width:265px;
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.51));
+}
+
+.floater5 {
+    position: absolute;
+    z-index: 2;
+    transform: translate(235px,-490px);
+    width:355px;
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.51));
+}
+
+/* HOME LINK */
+.home a {
+    color: black;
+    z-index: 10;
+    position: fixed;
+    font-weight: bold;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    top: 4px;
+    left: 5px;
+}
+
+/* MUSIC PLAYER */
+.player {
+    width: 205px;
+    color: black;
+    z-index: 10;
+    position: fixed;
+    bottom: 4px;
+    left: 5px;
+    font-weight: bold;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+audio {
+    width: 206px;
+    height: 30px;
+    background: white;
+    filter: invert(1) contrast(2);
+    border: 1px solid gray;
+    margin-top: 7px;
+    border-radius: 5px;
+}
