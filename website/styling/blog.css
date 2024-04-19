@@ -210,10 +210,6 @@ tab-wrapper a:active {
     font-style: italic;
 }
 
-#bg {
-    background:linear-gradient(#d2ffdf,#76cf6c);
-}
-
 /* STATUS */
 .status-frame {
     width:326px;
