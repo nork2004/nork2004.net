@@ -8,19 +8,19 @@
   <language>en-us</language>
   
   <item>
-    <title>page remaster!</title>
-	<pubDate>Fri, 19 Apr 2024 12:35 AM MST</pubDate>
-    <link>https://nork2004.neocities.org/subpages/updates.html</link>
-	<guid>https://nork2004.neocities.org/subpages/updates.html</guid>
-    <description>remastered my photos page to look a lil more simple.</description>
-  </item>
-  
-  <item>
     <title>RSS TEST</title>
 	<pubDate>Tue, 16 Apr 2024 6:04 AM MST</pubDate>
     <link>https://nork2004.neocities.org/subpages/updates.html</link>
 	<guid>https://nork2004.neocities.org/subpages/updates.html</guid>
     <description>little test but woo! i learned something</description>
+  </item>
+
+  <item>
+    <title>page remaster!</title>
+	<pubDate>Fri, 19 Apr 2024 12:35 AM MST</pubDate>
+    <link>https://nork2004.neocities.org/subpages/updates.html</link>
+	<guid>https://nork2004.neocities.org/subpages/updates.html</guid>
+    <description>remastered my photos page to look a lil more simple.</description>
   </item>
   
 </channel>
