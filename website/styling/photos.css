@@ -73,7 +73,7 @@ a:hover {
     width:485px;
     position: relative;
     filter:drop-shadow(0px 0px 3px black);
-    transform: ;
+    pointer-events:none;
 }
 
 .photo-box {
@@ -199,6 +199,7 @@ summary:active {
     width:340px;
     transform: translate(-30px, -374px) rotate(-5deg);
     z-index: 1;
+	pointer-events:none;
 }
 
 .floater2 {
@@ -206,6 +207,7 @@ summary:active {
     position: absolute;
     transform: translate(262px,-140px);
     z-index: 2;
+	pointer-events:none;
 }
 
 .floater3 {
@@ -213,7 +215,8 @@ summary:active {
     width:100px;
     z-index: 3;
     transform: translate(253px, -21px);
-    filter: drop-shadow(0px 0px 2px black)
+    filter: drop-shadow(0px 0px 2px black);
+	pointer-events:none;
 }
 
 .floater4 {
@@ -222,6 +225,7 @@ summary:active {
     z-index: 4;
     width:265px;
     filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.51));
+	pointer-events:none;
 }
 
 .floater5 {
@@ -230,6 +234,7 @@ summary:active {
     transform: translate(235px,-490px);
     width:355px;
     filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.51));
+	pointer-events:none;
 }
 
 /* HOME LINK */
