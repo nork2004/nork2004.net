@@ -6,6 +6,14 @@
   <link>https://nork2004.neocities.org/</link>
   <description>i feel so old using this stuff man</description>
   <language>en-us</language>
+
+ <item>
+    <title>new blog post!</title>
+	<pubDate>Sun, 21 Apr 2024 4:15 PM MST</pubDate>
+    <link>https://nork2004.neocities.org/subpages/music.html</link>
+	<guid>https://nork2004.neocities.org/subpages/music.html</guid>
+    <description>blurchella week 2 just happened...had to let out some thoughts.</description>
+  </item>
 	
   <item>
     <title>page remaster!</title>
@@ -14,15 +22,6 @@
 	<guid>https://nork2004.neocities.org/subpages/updates.html</guid>
     <description>remastered my photos page to look a lil more simple.</description>
   </item>
-  
-  <item>
-    <title>new blog post!</title>
-	<pubDate>Sun, 21 Apr 2024 4:15 PM MST</pubDate>
-    <link>https://nork2004.neocities.org/subpages/music.html</link>
-	<guid>https://nork2004.neocities.org/subpages/music.html</guid>
-    <description>blurchella week 2 just happened...had to let out some thoughts.</description>
-  </item>
-  
 </channel>
 
 </rss>
